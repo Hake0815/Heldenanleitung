@@ -1,0 +1,824 @@
+\documentclass[../../Heldenanleitung2]{subfiles}
+\begin{document}
+\chapter{Charaktererstellung}
+Jeder Charakter beginnt auf Level 1. Zu Beginn der Charaktererstellung werden die Attributswürfel verteilt. Anschließend wählt man eine Rasse. Zum Schluss können Fertigkeitspunkte verteilt und Talente gewählt werden.
+
+Es ist empfehlenswert sich einen Hintergrund für den Charakter zu überlegen und die Charaktererstellung anschließend so zu vollziehen, dass die gewählten Werte zu dem Hintergrund passen.
+
+\section{Verteilen der Attribute}
+
+Dem Charakter werden 3W8, 4W6 und 3W4 den 10 Attributen zugeordnet. Wann immer ein Wurf auf ein Attribut notwendig ist, so wird dieser Würfel benutzt.
+\renewcommand{\arraystretch}{1.5}
+{\rowcolors{2}{black!10!white!40}{black!50!white!50}
+\begin{table}[h!]
+\centering
+\caption{Abgeleitete Attribute}
+\label{tab:AbgeleiteteAtribute}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Abgeleitetes Attribut} & \textbf{Berechnung}\\
+\hline
+Lebenpunkte & 15 + Max Kon\\
+Regeneration & Kon\\
+Mana & Max Wil\\
+Manaregeneration & Wil\\
+Initiative & Bew\\
+Laufen & Max Bew + 1 für jede Steigerung der Sprintenprobe\\
+Ausweichen & (Max Ausweichenprobe)/2\\
+Parieren & (Max Waffenprobe)/2 + Mod durch Waffe\\
+Rüstungsklasse & max\{AU, PA\} + Rüstung
+\\
+\hline
+\end{tabular}
+\end{table}
+}
+
+\section{Rasse}
+
+Die Wahl der Rasse nimmt Einfluss auf die Grundattribute. Je nach gewählter Rasse können bestimmte Attributswürfel vergrößert werden und müssen verkleinert werden. Es kann kein Würfel über den W12 vergrößert werden und kein Würfel unter einem W4 verkleinert werden.
+
+\subsection{Menschen}
+Menschen sind die vielfältigsten Humanoide. Sie leben in großen Gemeinschaften und erfüllen dabei alle möglichen Aufgaben in einer Gesellschaft. Menschen werden $1,5$ m bis $1,7$ m groß und wiegen dabei zwischen 50 kg und 90 kg.\\
+\textbf{Bonus:} ein beliebigen Attributswürfel vergrößern
+
+\subsection{Zwerge}
+Zwerge sind angepasst an das Leben in den Bergen, sie sind ausdauernd, eigenwillig und können auch bei nur schwachem Licht noch gut sehen. Sie leben in Dörfern bestehend aus wenigen Familienclans. Viele Zwerge sind ausgezeichnete Handwerker. Zwerge werden $1,1$ m bis 1,5 m groß und wiegen dabei zwischen 60 kg und 100 kg.\\
+\textbf{Boni:} zwei Attributswürfel aus \{Ges, Kon, Wil\} vergrößern\\
+\textbf{Malus:} ein Attributswürfel aus \{Bew, Cha\} verkleinern
+
+\subsection{Elfen}
+Elfen sind angepasst an das Leben in Wäldern. Viele Elfen befassen sich mit Studien zur Natur oder Kunst. Sie leben sehr verstreut in eher kleinen Gemeinschaften. Elfen werden $1,6$ m bis $1,8$ m groß und wiegen dabei zwischen 50 kg und 70 kg.\\
+\textbf{Boni:} zwei Attributswürfel aus \{Bew, Int, Bil\} vergrößern\\
+\textbf{Malus:} ein Attributswürfel aus \{Stä, Wil\} verkleinern
+
+\subsection{Gnome}
+Gnome sind kleine Humanoide die sich oft in den Gesellschaften der anderen Rassen eingliedern. Dort erfüllen sie oft Aufgaben als Tagelöhner oder Diener. Gnome werden 0,7 m bis 0,9 m groß und wiegen dabei zwischen 20 kg und 40 kg.\\
+\textbf{Boni:} zwei Attributswürfel aus \{Bew, Ges, War\} vergrößern\\
+\textbf{Malus:} ein Attributswürfel aus \{Stä, Kon\} verkleinern
+
+\subsection{Orks}
+Orks sind eine sehr kriegerische Rasse, die in Stämmen, bestehend aus mehreren Familienclans, leben. Orks sind sehr gute Krieger und Jäger. Viele Stämme plündern andere Siedlungen um ihre Ernährungsgrundlage zu sichern. Orks werden 1.7 m bis 1,9 m groß und wiegen dabei zwischen 80 kg und 120 kg.\\
+\textbf{Boni:} zwei Attributswürfel aus \{Stä, Kon, Bew\} vergrößern\\
+\textbf{Malus:} ein Attributswürfel aus \{Int, Bil\} verkleinern
+
+\newpage
+%\section{Klassen}
+%\label{sec:Classes}
+%\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+%
+%Die Wahl der Klasse bestimmt die Entwicklung des Charakters wesentlich. Jeder Charakter lernt auf einem ungeraden Level ein Talent. Auf den Leveln 4, 12 und 20 wird ein Attributswürfel erhöht und auf den Leveln 8 und 16 kann ein Attribut um 1 verbessert werden. Alle weiteren Boni durch Levelaufstieg wird durch die Klasse bestimmt.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Grundtabelle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\begin{tabular}{C{2cm}|p{13cm}}
+%%Level & \centering Bonus \tabularnewline 
+%%\hline 
+%%1 & +1 Talent \\ 
+%%2 &  \\ 
+%%3 & +1 Talent \\ 
+%%4 & Attributswürfel erhöhen \\ 
+%%5 & +1 Talent \\ 
+%%6 &  \\ 
+%%7 & +1 Talent \\ 
+%%8 & Attribut +1 \\ 
+%%9 & +1 Talent \\ 
+%%10 &  \\ 
+%%11 & +1 Talent \\ 
+%%12 & Attributswürfel erhöhen \\ 
+%%13 & +1 Talent \\ 
+%%14 &  \\ 
+%%15 & +1 Talent \\ 
+%%16 & Attribut +1 \\ 
+%%17 & +1 Talent \\ 
+%%18 &  \\ 
+%%19 & +1 Talent \\ 
+%%20 & Attributswürfel erhöhen \\ 
+%%
+%%\end{tabular} 
+%
+%\subsection{Kämpfer}
+%3 Fp pro Level\\
+%Jedes gerade Level +1 Kampftalent, +1 Lp\\
+%Auf Level 1, 3, 9, 15 +1 auf Angriffswürfe\\
+%Auf Level 6, 12, 18 +1 auf Schadenswürfe\\
+%
+%\renewcommand{\arraystretch}{1.2}
+%\begin{tabular}{C{2cm}|p{13cm}}
+%Level & \centering Bonus \tabularnewline 
+%\hline 
+%1 & +1 Talent, +1 auf Angriffswürfe \\ 
+%2 & +1 Kampftalent, +1 Lp \\ 
+%3 & +1 Talent, +1 auf Angriffswürfe \\ 
+%4 & Attributswürfel erhöhen, +1 Kampftalent, +1 Lp \\ 
+%5 & +1 Talent \\ 
+%6 & +1 Kampftalent, +1 auf Schadenswürfe, +1 Lp \\ 
+%7 & +1 Talent \\ 
+%8 & Attribut +1, +1 Kampftalent, +1 Lp \\ 
+%9 & +1 Talent, +1 auf Angriffswürfe \\ 
+%10 & +1 Kampftalent, +1 Lp \\ 
+%11 & +1 Talent \\ 
+%12 & Attributswürfel erhöhen, +1 Kampftalent, +1 auf Schadenswürfe, +1 Lp \\ 
+%13 & +1 Talent \\ 
+%14 & +1 Kampftalent, +1 Lp \\ 
+%15 & +1 Talent, +1 auf Angriffswürfe \\ 
+%16 & Attribut +1, +1 Kampftalent, +1 Lp\\ 
+%17 & +1 Talent \\ 
+%18 & +1 Kampftalent, +1 auf Schadenswürfe, +1 Lp \\ 
+%19 & +1 Talent \\ 
+%20 & Attributswürfel erhöhen, +1 Kampftalent, +1 Lp\\ 
+%
+%\end{tabular} 
+%\newpage
+%\subsection{Schurke}
+%
+%5 Fp pro Level\\
+%Auf Level 2, 8, 14, 20 +1 Sporttalent\\
+%Auf Level 1, 4, 10, 16 +1W6 auf Schadenswürfe bei Schleichangriffen\\
+%Auf Level 4, 8, 12, 16, 20 +1 Lp\\
+%Auf Level 2, 8, 12, 18 +1 auf Initiative\\
+%
+%\begin{tabular}{C{2cm}|p{13cm}}
+%Level & \centering Bonus \tabularnewline 
+%\hline 
+%1 & +1 Talent, +1W6 Schleichangriffsschaden \\ 
+%2 & +1 Sporttalent, +1 Init \\ 
+%3 & +1 Talent \\ 
+%4 & Attributswürfel erhöhen, +1W6 Schleichangriffsschaden, +1 Lp \\ 
+%5 & +1 Talent \\ 
+%6 & +1 Init \\ 
+%7 & +1 Talent \\ 
+%8 & Attribut +1, +1 Sporttalent, +1 Lp \\ 
+%9 & +1 Talent \\ 
+%10 & +1W6 Schleichangriffsschaden \\ 
+%11 & +1 Talent \\ 
+%12 & Attributswürfel erhöhen, +1 Lp, +1 Init \\ 
+%13 & +1 Talent \\ 
+%14 & +1 Sporttalent \\ 
+%15 & +1 Talent \\ 
+%16 & Attribut +1, +1W6 Schleichangriffsschaden, +1 Lp \\ 
+%17 & +1 Talent \\ 
+%18 & +1 Init \\ 
+%19 & +1 Talent \\ 
+%20 & Attributswürfel erhöhen, +1 Sporttalent, +1 Lp \\ 
+%\end{tabular} 
+%\newpage
+%\subsection{Gelehrter}
+%6 Fp pro Level\\
+%Auf Level 5, 10, 15, 20 +1 Lp\\
+%Auf Level 2, 6, 10 +1 Wissenstalent\\
+%Auf Level 12, 16, 20 +1 Talent\\
+%Auf Level 3, 9, 14, 18 +1 Bonus auf eine Wissensprobe\\
+%
+%\begin{tabular}{C{2cm}|p{13cm}}
+%Level & \centering Bonus \tabularnewline 
+%\hline 
+%1 & +1 Talent \\ 
+%2 & +1 Wissenstalent \\ 
+%3 & +1 Talent, +1 Bonus auf eine Wissensprobe \\ 
+%4 & Attributswürfel erhöhen \\ 
+%5 & +1 Talent, +1 Lp \\ 
+%6 & +1 Wissenstalent \\ 
+%7 & +1 Talent \\ 
+%8 & Attribut +1 \\ 
+%9 & +1 Talent, +1 Bonus auf eine Wissensprobe \\ 
+%10 & +1 Wissenstalent, +1 Lp \\ 
+%11 & +1 Talent \\ 
+%12 & Attributswürfel erhöhen, +1 Talent \\ 
+%13 & +1 Talent \\ 
+%14 & +1 Bonus auf eine Wissensprobe \\ 
+%15 & +1 Talent, +1 Lp \\ 
+%16 & Attribut +1, +1 Talent \\ 
+%17 & +1 Talent \\ 
+%18 & +1 Bonus auf eine Wissensprobe \\ 
+%19 & +1 Talent \\ 
+%20 & Attributswürfel erhöhen, +1 Talent, +1 Lp \\ 
+%
+%\end{tabular} 
+%\newpage
+%\subsection{Barde}
+%
+%Startet mit dem Talent Motivator und kann statt Führen/Begeistern auch eine Probe auf ein Musikinstrument werfen.
+%6 Fp pro Level\\
+%Auf Level 5, 10, 15, 20 +1 Lp\\
+%Auf Level 2, 6, 10, 12, 16, 20 +1 Sozialtalent\\
+%Auf Level 3, 6, 11, 14, 18 +1 Bonus auf ein Musikinstrument\\
+%
+%\begin{tabular}{C{2cm}|p{13cm}}
+%Level & \centering Bonus \tabularnewline 
+%\hline 
+%1 & +1 Talent \\ 
+%2 & +1 Sozialtalent \\ 
+%3 & +1 Talent, +1 Bonus auf ein Musikinstrument \\ 
+%4 & Attributswürfel erhöhen \\ 
+%5 & +1 Talent, +1 Lp \\ 
+%6 & +1 Sozialtalent, +1 Bonus auf ein Musikinstrument \\ 
+%7 & +1 Talent \\ 
+%8 & Attribut +1 \\ 
+%9 & +1 Talent \\ 
+%10 & +1 Lp, +1 Sozialtalent \\ 
+%11 & +1 Talent, +1 Bonus auf ein Musikinstrument \\ 
+%12 & Attributswürfel erhöhen, +1 Sozialtalent \\ 
+%13 & +1 Talent \\ 
+%14 & +1 Bonus auf ein Musikinstrument \\ 
+%15 & +1 Talent, +1 Lp \\ 
+%16 & Attribut +1, +1 Sozialtalent \\ 
+%17 & +1 Talent \\ 
+%18 & +1 Bonus auf ein Musikinstrument \\ 
+%19 & +1 Talent \\ 
+%20 & Attributswürfel erhöhen, +1 Lp, +1 Sozialtalent \\ 
+%
+%\end{tabular}
+%\newpage
+%\subsection{Gaukler}
+%Startet mit einem Bonus von +2 auf Jonglieren und dem Talent Dichter.
+%6 Fp pro Level\\
+%Auf Level 5, 10, 15, 20 +1 Lp\\
+%Auf Level 2, 6, 10, 12, 16, 20 +1 Sozialtalent\\
+%Auf Level 3, 9, 18 +1 Bonus auf eine Sozialprobe\\
+%Auf Level 2, 7, 14 +1 Bonus auf eine Sportprobe\\
+%
+%\begin{tabular}{C{2cm}|p{13cm}}
+%Level & \centering Bonus \tabularnewline 
+%\hline 
+%1 & +1 Talent \\ 
+%2 & +1 Sozialtalent, +1 Bonus auf eine Sportprobe \\ 
+%3 & +1 Talent, +1 Bonus auf ein Musikinstrument \\ 
+%4 & Attributswürfel erhöhen \\ 
+%5 & +1 Talent, +1 Lp \\ 
+%6 & +1 Sozialtalent \\ 
+%7 & +1 Talent, +1 Bonus auf eine Sportprobe \\ 
+%8 & Attribut +1 \\ 
+%9 & +1 Talent, +1 Bonus auf eine Sozialprobe \\ 
+%10 & +1 Lp, +1 Sozialtalent \\ 
+%11 & +1 Talent \\ 
+%12 & Attributswürfel erhöhen, +1 Sozialtalent \\ 
+%13 & +1 Talent \\ 
+%14 & +1 Bonus auf eine Sportprobe \\ 
+%15 & +1 Talent, +1 Lp \\ 
+%16 & Attribut +1, +1 Sozialtalent \\ 
+%17 & +1 Talent \\ 
+%18 & +1 Bonus auf eine Sozialprobe \\ 
+%19 & +1 Talent \\ 
+%20 & Attributswürfel erhöhen, +1 Lp, +1 Sozialtalent \\ 
+%\end{tabular} 
+%\newpage
+%\subsection{Handwerker}
+%5 Fp pro Level\\
+%Auf Level 2, 4, 8, 12, 14, 16, 20 +1 Lp\\
+%Auf Level 2, 6, 10, 14 +1 Handwerkstalent\\
+%Auf Level 2, 8, 18 +1 auf Angriffswürfe\\
+%Auf Level 10 +1 auf Schadenswürfe\\
+%
+%\begin{tabular}{C{2cm}|p{13cm}}
+%Level & \centering Bonus \tabularnewline 
+%\hline 
+%1 & +1 Talent \\ 
+%2 & +1 Lp , +1 Handwerkstalent, +1 auf Angriffswürfe\\ 
+%3 & +1 Talent \\ 
+%4 & Attributswürfel erhöhen, +1 Lp \\ 
+%5 & +1 Talent \\ 
+%6 & +1 Handwerkstalent \\ 
+%7 & +1 Talent \\ 
+%8 & Attribut +1, +1 Lp, +1 auf Angriffswürfe \\ 
+%9 & +1 Talent \\ 
+%10 & +1 Handwerkstalent, +1 auf Schadenswürfe \\ 
+%11 & +1 Talent \\ 
+%12 & Attributswürfel erhöhen, +1 Lp \\ 
+%13 & +1 Talent \\ 
+%14 & +1 Lp, +1 Handwerkstalent \\ 
+%15 & +1 Talent \\ 
+%16 & Attribut +1, +1 Lp \\ 
+%17 & +1 Talent \\ 
+%18 & +1 auf Angriffswürfe \\ 
+%19 & +1 Talent \\ 
+%20 & Attributswürfel erhöhen, +1 Lp \\ 
+%
+%\end{tabular} 
+%
+%\newpage
+%\subsection{Schütze}
+%5 Fp pro Level\\
+%Startet mit dem Talent Scharfschütze\\
+%Auf Level 2, 6, 10, 14, 17, 20 +1 Lp\\
+%Auf Level 2, 12 +1 Kampftalent\\
+%Auf Level 6, 18 +1 Sporttalent\\
+%Auf Level 2, 14 +1 auf Angriffswürfe\\
+%Auf Level 10 +1 auf Schadenswürfe\\
+%
+%\begin{tabular}{C{2cm}|p{13cm}}
+%Level & \centering Bonus \tabularnewline 
+%\hline 
+%1 & +1 Talent \\ 
+%2 & +1 Lp, +1 Kampftalent, +1 auf Angriffswürfe \\ 
+%3 & +1 Talent \\ 
+%4 & Attributswürfel erhöhen \\ 
+%5 & +1 Talent \\ 
+%6 & +1 Lp, +1 Sporttalent \\ 
+%7 & +1 Talent \\ 
+%8 & Attribut +1 \\ 
+%9 & +1 Talent \\ 
+%10 & +1 Lp, +1 auf Schadenswürfe \\ 
+%11 & +1 Talent \\ 
+%12 & Attributswürfel erhöhen, +1 Kampftalent \\ 
+%13 & +1 Talent \\ 
+%14 & +1 Lp, +1 auf Angriffswürfe \\ 
+%15 & +1 Talent \\ 
+%16 & Attribut +1 \\ 
+%17 & +1 Talent, +1 Lp \\ 
+%18 & +1 Sporttalent \\ 
+%19 & +1 Talent \\ 
+%20 & Attributswürfel erhöhen, +1 Lp \\ 
+%
+%\end{tabular} 
+
+\section{Talente}
+
+Talente sind in verschiedene Gruppen eingeteilt. Auf jedem Level erhält ein Charakter ein Talent.
+
+\subsection{Allgemeine Talente}
+
+\begin{multicols}{2}
+
+\begin{tcolorbox}[title={Glücklicher}, colbacktitle=gray]    
+   Ein Attribut darf pro Session neu geworfen werden.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Glück im Unglück}, colbacktitle=gray]    
+   Eine Narbe darf entfernt werden.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Nahtoderfahrungen}, colbacktitle=gray]    
+   Statt zu sterben darf einmalig nicht gestorben werden.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Fertigkeitenfokus}, colbacktitle=gray]    
+   +1 auf eine beliebige Probe. Dieses Talent darf mehrmals erlernt werden aber nur ein Mal je Probe.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Talentiert}, colbacktitle=gray]    
+   +3 Fp
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Umdenken}, colbacktitle=gray]    
+   +1 auf ein beliebiges Attribut, -1 auf ein beliebiges anderes Attribut
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Konzentration}, colbacktitle=gray]    
+   Einmal pro Session darf vor einer Probe +3 auf den Bonus addiert werden.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Geweihter (Rang 1)}, colbacktitle=gray]    
+   Der Charakter wird zum Geweihten vom Rang 1. Der Spieler sucht sich einen Gott aus, von dem er ein geweihter wird. Er erhält alle Rang 1 Boni die in dem Abschnitt seiner Gottheit aufgelistet sind.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Geweihter (Rang 2)}, colbacktitle=gray]    
+	\textbf{Voraussetzung:} Geweihter (Rang 1), Level 5
+	\vspace{0.2cm}	
+	
+   Der Charakter wird zum Geweihten vom Rang 2 in einer Gottheit bei der er schon Geweihter ist. Er erhält zusätzlich alle Rang 2 Boni die in dem Abschnitt seiner Gottheit aufgelistet sind.
+\end{tcolorbox}
+
+\end{multicols}
+
+\subsection{Kampftalente}
+\begin{multicols}{2}
+
+\begin{tcolorbox}[title={Abhärtung},colbacktitle=red, coltitle=black]    
+   +3 Lp und +1 Regeneration, ab Level 5 +5 Lp und +2 Regeneration
+\end{tcolorbox}  
+
+
+\begin{tcolorbox}[title={Nahkampfangriff ausweichen},colbacktitle=red, coltitle=black]
+	\textbf{Voraussetzung:} Bew: 1W8
+	\vspace{0.2cm}	
+	
+   Ein Mal pro Session Nahkampfangriff ignorieren (nach dem Angriffswurf)
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Fernkampfangriff ausweichen},colbacktitle=red, coltitle=black]    
+	\textbf{Voraussetzung:} Nahkampfangriff ausweichen
+	\vspace{0.2cm}	
+	
+   Ein Mal pro Session Fernkampfangriff ignorieren (nach dem Angriffswurf)
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Kampf mit zwei Waffen},colbacktitle=red, coltitle=black]    
+	\textbf{Voraussetzung:} Bew: 1W8
+	\vspace{0.2cm}
+	
+   Mali beim Kampf mit zwei Waffen wird halbiert.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Kampfreflexe},colbacktitle=red, coltitle=black]    
+	\textbf{Voraussetzung:} War: 1W8
+	\vspace{0.2cm}
+	
+   Ein extra Gelegenheitsangriff
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Gegenangriff},colbacktitle=red, coltitle=black]
+	\textbf{Voraussetzung:} War: 1W8, Bew: 1W8
+	\vspace{0.2cm}
+		
+   Pariert der Charakter einen Nahkampfangriff, kann der Charakter seine Reaktion benutzen, um einen Gelegenheitsangriff gegen den Angreifer durchzuführen.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Stellung halten},colbacktitle=red, coltitle=black]    
+   Trifft ein Gelegenheitsangriff einen Gegner, kann sich dieser Gegner in dieser Runde nicht mehr bewegen und nicht angreifen.
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[title={Berserker},colbacktitle=red, coltitle=black]    
+   Der Charakter kann, einaml pro Kampf, den Berserkermodus als Bonusaktion aktivieren und deaktivieren. Im Berserkermodus erhält der Charakter einen Bonus +2 auf Stärke und -2 auf AU und PA. Fallen die verbleibenden Lebenspunkte unter 50\% verursachen alle Nahkampfangriffe +1W8 Schaden. Im Berserkermodus ist der Charakter nicht in der Lage irgendwelche Aktionen durchzuführen die irgendeine Art von Konzentration oder geistiger Anstrengung benötigen. Der Berserkermodus wird automatisch beendet falls der Charakter weder angegriffen wurde, noch selbst einen Nahkampfangriff getätigt hat.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Berserkerkraft, Zäh},colbacktitle=red, coltitle=black]    
+    \textbf{Vorraussetzung:} Berserker
+	\vspace{0.2cm}	
+	
+   Während der Charakter im Berserkermodus ist, wird jeder physische Schaden halbiert.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Berserkerkraft, Furchteinflößend},colbacktitle=red, coltitle=black]    
+    \textbf{Vorraussetzung:} Berserker
+	\vspace{0.2cm}	
+	
+    Während der Charakter im Berserkermodus ist, kann er Einschüchterungsproben als Bonusaktion durchführen und dabei den Charisma Würfel durch Stärke ersetzen.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Berserkerkraft, Unbezwingbar},colbacktitle=red, coltitle=black]    
+    \textbf{Vorraussetzung:} Berserker, Level 6
+	\vspace{0.2cm}	
+	
+    Jedes Mal wenn die Lebenspunkte auf oder unter 0 fallen würden, während der Berserkermodus aktiv ist, kann eine Ausdauerprobe geworfen werden (SK 9). Ist die Probe erfolgreich, sind die verbleibenden Lebenspunkte 1. Mit jeder erfolgreichen Probe steigt die Schwierigkeit um 4, bis zur nächsten Regenerationsphase.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Schnelle Reflexe},colbacktitle=red, coltitle=black]
+	\textbf{Voraussetzung:} War: 1W8
+	\vspace{0.2cm}
+	
+   +1 AU, +1 PA
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Kampferfahrung},colbacktitle=red, coltitle=black]    
+   Pro Kampf darf ein Angriffswurf neu geworfen werden
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Gezielter Schuss},colbacktitle=red, coltitle=black]    
+   Ignoriere den Deckungsbonus des Ziels (außer bei vollständig verdeckten Zielen)
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Scharfschütze},colbacktitle=red, coltitle=black]
+	\textbf{Vorraussetzung:} Gezielter Schuss
+	\vspace{0.2cm}
+	
+   Halbiert Entfernungsmalus bei Fernkampfangriffen. Es kann ein Malus von 5 auf den Angriffswurf in Kauf genommen werden um den Schaden um 10 zu erhöhen.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Waffenfokus},colbacktitle=red, coltitle=black]    
+   +1 Bon auf eine Waffenfertigkeit (kann mehrmals erlernt werden aber nur ein Mal pro Waffentyp)
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Waffenspezialisierung},colbacktitle=red, coltitle=black]  
+	\textbf{Vorraussetzung:} Waffenfokus
+	\vspace{0.2cm}
+	  
+   Für einen gewählten Waffentyp (für den bereits Waffenfokus gewählt wurde) +2 Schaden (kann mehrmals erlernt werden aber nur ein Mal pro Waffentyp)
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Doppelangriff},colbacktitle=red, coltitle=black]  
+	\textbf{Vorraussetzung:} Level 6
+	\vspace{0.2cm}
+	  
+   Statt zu laufen kann ein weiterer Nahkampfangriff durchgeführt werden.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Flüssige Bewegung},colbacktitle=red, coltitle=black]  
+	\textbf{Vorraussetzung:} Bew: 1W10, Level 6
+	\vspace{0.2cm}
+	  
+   Ein Mal pro Kampf kann nach einem erfolgreichem Nahkampfangriff ein zweiter Nahkampfangriff gegen ein weiteres Ziel durchgeführt werden.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Gezielte Treffer},colbacktitle=red, coltitle=black]  
+	\textbf{Vorraussetzung:} Level 4
+	\vspace{0.2cm}
+	  
+    Für jede Steigerung bei einem Angriff erhöht sich der Schaden um 2 statt 1.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Waffenloser Kampf},colbacktitle=red, coltitle=black]	  
+	\textbf{Vorraussetzung:} Faustkampf: 1W6
+	\vspace{0.2cm}
+	
+    Waffenlose Angriffe erhalten keinen Malus gegen Gegner mit höherer Angriffsreichweite.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Schnelle Schläge},colbacktitle=red, coltitle=black]	  
+	\textbf{Vorraussetzung:} Level 3
+	\vspace{0.2cm}
+	  
+    Waffenlose Angriffe verursachen Stä+Bew Schaden.
+\end{tcolorbox}
+\end{multicols}
+
+\subsection{Sporttalente}
+
+\begin{multicols}{2}
+
+\begin{tcolorbox}[title={Verbesserte Initiative},colbacktitle=green, coltitle=black]    
+   +4 Initiative
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Sportlich},colbacktitle=green, coltitle=black]    
+   Pro Session kann eine Sportprobe neu geworfen werden.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Akrobat},colbacktitle=green, coltitle=black]    
+   +1 auf Akrobatik, Klettern und Sprinten
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Athlet},colbacktitle=green, coltitle=black]    
+   +1 auf Ausdauer, Schwimmen und Sprinten
+\end{tcolorbox}
+
+%\begin{tcolorbox}[title={Leichtfüßigkeit},colbacktitle=green, coltitle=black]    
+%   +2 auf Sprinten
+%\end{tcolorbox}
+
+\begin{tcolorbox}[title={Rennen},colbacktitle=green, coltitle=black]    
+   Beim Sprinten fünfacher Laufenwert (statt dreifacher)
+\end{tcolorbox}
+
+%\begin{tcolorbox}[title={Schatten},colbacktitle=green, coltitle=black]    
+%   +2 auf Schleichen
+%\end{tcolorbox}
+
+\begin{tcolorbox}[title={Meuchler},colbacktitle=green, coltitle=black]    
+   +1W10 Schaden bei Schleichangriffen
+\end{tcolorbox}
+
+\end{multicols}
+
+\subsection{Handwerkstalente}
+\begin{multicols}{2}
+\begin{tcolorbox}[title={Handwerker},colbacktitle=orange, coltitle=black]    
+   Pro Session kann eine Handwerksprobe neu geworfen werden.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Handwerksfokus},colbacktitle=orange, coltitle=black]    
+   +1 auf eine beliebige Handwerksprobe (kann mehrmals erlernt werden aber nur ein Mal pro Probe)
+\end{tcolorbox}
+
+%\begin{tcolorbox}[title={Waffenmeister},colbacktitle=orange, coltitle=black]    
+%   Das maximale Level einer Waffenart wird um 1 erhöht.
+%\end{tcolorbox}
+
+%\begin{tcolorbox}[title={Waffenschmied},colbacktitle=orange, coltitle=black]    
+%   Beim Kampf mit selbst gefertigten Waffen +1 auf alle Angriffswürfe.
+%\end{tcolorbox}
+
+\begin{tcolorbox}[title={Passgenau},colbacktitle=orange, coltitle=black]    
+   Der maximale Bewegungswürfel selbstgefertigter Rüstungen wird um 1 erhöht.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Schönes Handwerk},colbacktitle=orange, coltitle=black]    
+   Gefertigte Kleidung gibt +1 auf bis zu zwei passende sozial Proben.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Fachwissen},colbacktitle=orange, coltitle=black]    
+   Der Bonus einer entsprechenden Handwerksprobe, darf auf Verhandeln angewandt werden.
+\end{tcolorbox}
+
+\end{multicols}
+
+\subsection{Soziale Talente}
+
+\begin{multicols}{2}
+
+\begin{tcolorbox}[title={Gelassenheit}, colbacktitle=yellow, coltitle=black]    
+   Pro Session kann eine Sozialprobe neu geworfen werden.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Überspielen}, colbacktitle=yellow, coltitle=black]    
+   Einmal je Session kann eine Sozialprobe eines anwesenden Verbündeten um Hum aufgewertet werden.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Gauklertum}, colbacktitle=yellow, coltitle=black]    
+   +1 auf ein Musikinstrument, Fingerfertigkeit, Schauspielern
+\end{tcolorbox}
+
+%\begin{tcolorbox}[title={Ablenkung}, colbacktitle=yellow, coltitle=black]    
+%   Kann einmal je Kampf für eine Standardaktion die RK eines Gegners für eine Runde um 4 verringern, wenn eine Witzprobe gegen Willenskraft gelingt.
+%\end{tcolorbox}
+
+%\begin{tcolorbox}[title={Motivator}, colbacktitle=yellow, coltitle=black]    
+%   Ein Mal pro Kampf darf eine Führen/Begeistern Probe als Standardaktion geworfen werden. Alle Verbündeten in der Nähe bekommen +2(+1xSteigerung) auf alle Angriffswürfe.
+%\end{tcolorbox}
+
+\begin{tcolorbox}[title={Beeindruckende Gestalt}, colbacktitle=yellow, coltitle=black]    
+   Beim Auswürfeln der Initiative würfeln alle Gegner eine Willenskraftprobe gegen Einschüchtern. Die Gegner, die fehlschlagen, bekommen einen Malus von 4 auf die Initiative und sind bei Gleichstand immer später an der Reihe.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Provokator}, colbacktitle=yellow, coltitle=black]	
+   +3 AU und PA wenn von einem verspottetem Ziel angegriffen.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Konversationist}, colbacktitle=yellow, coltitle=black]    
+   Wenn während einer Konversation eine Sozialprobe geschafft wird, erhält man einen Bonus von +3 auf alle weiteren Sozialproben während dieser Konversation.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Vielseitiger Musikant}, colbacktitle=yellow, coltitle=black]    
+   +3 auf bis zu 3 Musikinstrumente
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Dichter}, colbacktitle=yellow, coltitle=black]    
+   +3 auf Dichten, kann Bil durch Cha in der Probe ersetzen
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Überzeugende Musik}, colbacktitle=yellow, coltitle=black]    
+	\textbf{Vorraussetzung:} 1W8 als Fertigkeitswürfel in einem Instrument
+	\vspace{0.2cm}
+	
+   Jede passende Sozialprobe kann durch das spielen von Musik unterstützt werden. Dazu wird das Ergebnis der Sozialprobe und das Ergebnis einer Instrumentalprobe addiert und mit der doppelten ursprünglichen Schwierigkeit verglichen.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Furchtloser Anführer}, colbacktitle=yellow, coltitle=black]    
+	\textbf{Vorraussetzung:} Wil: 1W8, Cha: 1W10, Level 4
+	\vspace{0.2cm}
+	
+    Du und alle Verbündeten in 30\,m Radius können nicht verängstigt oder panisch sein, solange du bei Bewusstsein bist.
+\end{tcolorbox}
+
+\end{multicols}
+
+\subsection{Wissenstalente}
+
+\begin{multicols}{2}
+
+\begin{tcolorbox}[title={Wissender},colbacktitle=brown, coltitle=black]    
+   Pro Session kann eine Wissensprobe neu geworfen werden.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Allgemeinwissen},colbacktitle=brown, coltitle=black]    
+   +1 auf 3 Wissensproben
+\end{tcolorbox}
+
+%\begin{tcolorbox}[title={Arzt},colbacktitle=brown, coltitle=black]    
+%   +2 auf Wunden versorgen
+%\end{tcolorbox}
+
+%\begin{tcolorbox}[title={Angewandten Wissen},colbacktitle=brown, coltitle=black]    
+%   Bei einer Probe kann der Bonus einer passenden Wissensprobe angewendet werden.
+%\end{tcolorbox}
+
+\begin{tcolorbox}[title={Feldarzt},colbacktitle=brown, coltitle=black]
+	\textbf{Vorraussetzung:} Ges: 1W8
+	\vspace{0.2cm}
+	
+   Kann während des Kampfes schnellverarzten (volle Aktion), um dem Schnellverarztetem Charakter die Möglichkeit zu geben, seinen \glqq Wundenwurf\grqq{} einmal neu zuwerfen.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Gegner analysieren},colbacktitle=brown, coltitle=black]    
+   Pro Kampf kann ein Gegner ausgesucht werden. Bei Angriffen gegen dieses Ziel kann Int das eigentliche Attribut beim Angriffswurf ersetzen.
+\end{tcolorbox}
+
+\end{multicols}
+
+\subsection{Magietalente}
+
+\begin{multicols}{2}
+
+\begin{tcolorbox}[title={Magisches Reservoir},colbacktitle=blue, coltitle=white]    
+   +3 Mana
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Schnelle magische Erholung},colbacktitle=blue, coltitle=white]    
+   +Wil Manaregeneration
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={leichte Magie},colbacktitle=blue, coltitle=white]    
+   +1 auf alle Zauberproben wenn keine Rüstung getragen wird.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Stummes Zaubern},colbacktitle=blue, coltitle=white]    
+   Ermöglicht ohne Malus stumm zu zaubern.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Gestenloses Zaubern},colbacktitle=blue, coltitle=white]    
+   Ermöglicht ohne Malus gestenlos zu zaubern.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Lieblingszauber},colbacktitle=blue, coltitle=white]    
+   Ein bekannter Zauber kann zum Lieblingszauber ernannt werden. Die Mana kosten für diesen Zauber werden um 1 verringert (kann nicht auf 0 fallen) außerdem wird der PW des Zaubers um 2 erhöht. Bei jedem Levelaufstieg kann ein anderer Zauber zum Lieblingszauber erklärt werden. Die Boni für den alten Zauber fallen dabei weg.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Zauberkundig I},colbacktitle=blue, coltitle=white]    
+   Erlerne bis zu 3 Level 1 Zauber
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Zauberkundig II},colbacktitle=blue, coltitle=white]
+	\textbf{Vorraussetzung:} Zauberkundig I, Level 3
+	\vspace{0.2cm}
+	
+   Erlerne bis zu 2 Level 2 Zauber
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Zauberkundig III},colbacktitle=blue, coltitle=white]
+	\textbf{Vorraussetzung:} Zauberkundig II, Level 6
+	\vspace{0.2cm}
+	
+   Erlerne 1 Level 3 Zauber
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Kriegszauberer},colbacktitle=blue, coltitle=white]
+	Zaubern provoziert keine Gelegenheitsangriffe mehr.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Magischer Alchemist},colbacktitle=blue, coltitle=white]
+	\textbf{Vorraussetzung:} Probenwürfel in mind 1 Zauberprobe: 1W10, Int: 1W10
+	\vspace{0.2cm}
+	
+	Alle bekannten Zauber stehen auch als Alchemierezepte zur Verfügung
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Experimentator},colbacktitle=blue, coltitle=white]
+	\textbf{Vorraussetzung:} Probenwürfel in Zauber überladen: 1W8, Int: 1W8
+	\vspace{0.2cm}
+	
+	Wann immer ein Zauber erfolgreich überladen wurde, kann die neue Version als Zauber permanent gelernt werden.
+\end{tcolorbox}
+
+\end{multicols}
+
+\section{Fertigkeitspunkte}
+Auf Level 1 startet jeder Charakter mit 8 Fp. Auf jedem weiteren Level erhält der Charakter 5 weitere Fp.
+
+Für einen Fp, kann der Probenwürfel einer Probe vergrößert werden. Pro Level kann eine Probe immer nur einmal gesteigert werden. Eine Probe kann maximal Spielerlevel/2 (aufgerundet) mal gesteigert werden. Jede Probe startet mit einem W4 als Probenwürfel. Waffenfertigkeiten kosten 2 Fp um gesteigert zu werden.
+
+Für 4 Fp kann ein Attributswürfel verbessert werden, außerdem können für Fp Zauber erlernt werden (siehe Abschnitt Erlernen von Zauber).
+
+\section{Sternzeichen}
+Jeder Charakter wird unter einem Sternzeichen geboren und erhält die damit verbundenen Effekte. Unter welchen Sternzeichen ein Held geboren wird, wird ausgewürfelt, wobei der Würfelwurf ein Mal wiederholt werden kann.
+
+\subsection{Krieger}
+Die Zeit des Kriegers ist August, wenn seine Stärke für die Ernte erforderlich ist. Diejenigen, die unter dem Zeichen des Kriegers geboren sind, sind mit Waffen aller Art vertraut, aber neigen dazu unbeherrscht zu sein. Charaktere mit diesem Sternzeichen erhalten einen Bonus von \textbf{+1 auf alle Nahkampfwaffen}.
+
+\subsection{Magier}
+Die Zeit des Magiers ist April als Magie zum ersten Mal von Menschen benutzt wurde. Diejenigen, die unter dem Zeichen des Magiers geboren werden, besitzen mehr Mana und Talent für die magischen Künste. Allerdings sind sie oft arrogant und geistesabwesend. Charaktere mit diesem Sternzeichen besitzen \textbf{4 extra Mana}.
+
+\subsection{Diebin}
+Die Zeit der Diebin ist der dunkelste Monat, Dezember. Diejenigen, die unter der Diebin geboren werden sind nicht notwendiger Weise Diebe, allerdings gehen sie häufiger Risiken ein und kommen dabei nur selten zu Schaden. Ihr Glück wird sie aber schließlich verlassen und leben meist nicht so lang wie die, die unter anderen Zeichen geboren werden. Charaktere mit diesem Sternzeichen können \textbf{ein mal pro Session einen beliebigen Würfel neu werfen}.
+
+\subsection{Fürstin}
+Die Zeit der Fürstin ist September. Diejenigen, die unter diesem Zeichen geboren werden sind nett, hilfsbereit und tolerant. Charaktere mit diesem Sternzeichen erhalten \textbf{+1 auf alle Willenskraftproben}.
+
+\subsection{Ross}
+Die Zeit des Rosses ist Juni. Diejenigen, die unter diesem Zeichen geboren werden, sind ungeduldig und eilen von einem Ort zum Nächsten. Charaktere mit diesem Sternzeichen haben eine um \textbf{2 erhöhte Bewegungsweite} und erhalten \textbf{+1 auf alle Ausdauerproben}.
+
+\subsection{Fürst}
+Die Zeit des Fürsten ist März. Diejenigen, die unter diesem Sternzeichen geboren werden, sind gesünder und stärker als andere. Charaktere mit diesem Sternzeichen erhalten \textbf{4 Lp}.
+
+\subsection{Lehrling}
+Die Zeit des Lehrlings ist Juli. Diejenigen, die unter diesem Zeichen geboren werden, haben eine besondere Vorleibe für alle magischen Künsten, sind aber auch anfälliger für Magie. Character mit diesem Sternzeichen haben \textbf{7 extra Mana}, aber erhalten einen \textbf{Malus von 2 um magischen Effekten zu widerstehen}.
+
+\subsection{Golem}
+Die Zeit des Golems ist November, Diejenigen, die unter dem Golem geboren werden sind natürliche Zauberer mit großen Manareserven, regenerieren Mana aber nur langsam. Charakter mit diesem Sternzeichen haben \textbf{10 extra Mana}, \textbf{regenerieren aber nur die Hälfte(aufgerundet) von ihrem normalen Wert. Außerdem, wenn ein Charakter mit dem Golem als Sternzeichen Ziel eines Zaubers einer anderen Person wird, erhält er die Hälfte der Manakosten des Zaubers als Mana zurück.}
+
+\subsection{Ritual}
+Die Zeit des Rituals ist Januar. Diejenigen, die unter diesem Zeichen geboren werden, haben eine besonders starke Bindung zu den Göttern. \textbf{Ein mal pro Session kann ein Charakter mit dem Sternzeichen Ritual eine Probe auf Willenskraft machen, ist sie erfolgreich, erhält er sofort die Hälfte seiner fehlenden Lebenspunkte zurück.}
+
+\subsection{Liebende}
+Die Zeit der Liebenden ist Februar. Diejenigen, die unter diesem Sternzeichen geboren werden, sind besonders anmutig und leidenschaftlich. Charaktere mit diesem Sternzeichen erhalten \textbf{+1 auf Charisma}.
+
+\subsection{Schatten}
+Die Zeit des Schattens ist Mai. Der Schatten gewährt denen die unter ihm geboren werden die Fähigkeit sich in den Schatten zu verstecken. Charaktere mit diesem Sternzeichen \textbf{erhalten den Zauber Unsichtbarkeit und können ihn mit einer Erleichterung von 2 und mit  einem Manapunkt weniger ausführen.}
+
+\subsection{Turm}
+Die Zeit des Turms ist Oktober. Diejenigen, die unter dem Turm geboren werden, haben ein Händchen dafür, Gold zu finden. Charaktere mit diesem Sternzeichen können eine \textbf{Bemerkenprobe mit einer Erleichterung von 2 machen um ein Gefühl zu bekommen, wo Gold oder andere Wertgegenstände gefunden werden können.} Es hängt vom Spielleiter ab wie spezifisch dieser Sinn in einer speziellen Situation ist, generell ist der Sinn genauer je näher der Spieler zum Schatz ist.
+
+\section{Levelaufstieg}
+
+\begin{wraptable}{r}{6cm}
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Level & Erfahrungspunkte \\ \hline
+1 & 0\\ \hline
+2 & 100\\ \hline
+3 & 400\\ \hline
+4 & 900\\ \hline
+5 & 1600\\ \hline
+6 & 2500\\ \hline
+7 & 3600\\ \hline
+8 & 4900\\ \hline
+9 & 6400\\ \hline
+10 & 8100\\ \hline
+\end{tabular}
+\caption{Erfahrungstabelle}
+\end{wraptable}
+Nach jeder Session können Erfahrungspunkte verteilt werden. Erreicht ein Charakter die nötigen Punkte um ein Level aufzusteigen so erhält er ein Talent und 5 Fp. Außerdem kann sich der Spieler zwischen 2 Lp (+1 Reg), 2 Mana (+1 ManaReg) und 3 Fp entscheiden.
+
+
+\end{document}

@@ -1,0 +1,73 @@
+\documentclass[../../Heldenanleitung2]{subfiles}
+\begin{document}
+\chapter{Grundlegende Regeln}
+Wann immer der Ausgang eines Ereignis nicht eindeutig vorbestimmt ist, werden Würfel geworfen. Welche Würfel geworfen werden und was das Würfelergebnis zu bedeuten hat, hängt von der speziellen Situation ab und soll im folgenden erläutert werden.
+
+Generell zählt ein Wurf kritisch sobald die höchste Zahl des Würfels geworfen wurde. In diesem Fall wird erneut gewürfelt und das neue Ergebnis hinzu addiert. Der neue Wurf kann erneut kritisch sein. Würfe bei denen ein erneutes Würfeln um den Würfelwurf zu erhöhen sinnlos ist, können nicht kritisch sein (z.B. der Narbenwurf).
+
+\section{Grundattribute}
+Jeder Charakter wird durch die 10 Attribute, Stärke (Stä), Kondition (Kon), Geschick (Ges), Beweglichkeit (Bew), Wahrnehmung (War), Wille (Wil), Intelligenz (Int), Bildung (Bil), Charisma (Cha) und Humor (Hum) beschrieben. Diese Attribute legen das Grundgerüst des Charakters fest und bestimmen die grundlegenden Fähigkeiten fest.
+Jedes Attribut erhält einen Attributswürfel. Wenn das werfen auf ein Attribut erforderlich ist, wird dieser Würfel geworfen. Die möglichen Würfel sind W4, W6, W8, W10 oder W12. 
+
+Wird ein Attribut mit seiner Abkürzung erwähnt, so ist damit immer das Ergebnis des entsprechenden Würfelwurfs gemeint zuzüglich eines eventuellen Bonus oder Malus den das Attribut hat. Ist die Rede von einem maximalem Attribut (z.B. Max Kon im Falle der Lebenspunkte), so ist die größte Zahl die der entsprechende Attributswürfel würfeln kann plus ein eventueller Bonus oder Malus gemeint.
+
+\section{Probe}
+Die Proben charakterisieren wie gut ein Charakter bestimmte Aktionen durchführen kann. Jeder Probe ist ein Attribut zugeordnet (z.B. ist Bemerken Warnehmung zugeordnet). Das bestimmt die Veranlagung bestimmte Tätigkeiten zu vollziehen. Außerdem ist jeder Probe ein Probenwürfel zugeordnet. Dieser spiegelt die Erfahrung oder Übung in einer Tätigkeit wieder. Jeder Charakter starten mit 1W4 als Probenwürfel für jede Probe. Im Laufe der Charaktererstellung und später beim aufleveln, können die Probenwürfel einzelner Proben verbessert werden.
+
+Wann immer ein Charakter eine Aktion durchführt, dessen Ausgang ungewiss ist, wird eine passende Probe abgelegt (z.B. wenn ein Charakter ein Haus erklettern möchte ist eine Kletternprobe abzulegen). Dazu wird mit dem Attributswürfel der Probe und dem Probenwürfel gewürfelt. Zu dem Würfelergebnis werden alle eventuelle Boni und Mali addiert. Der Spielleiter entscheidet die Schwierigkeit der Probe und somit den Wert der gewürfelt werden muss. Die Standardschwierigkeit für Proben ist 9.
+
+Bei vergleichenden Proben wie z.B. Schleichen gegen Bemerken werden beide Probenwerte miteinander verglichen. Bei Gleichstand ist zu Gunsten des Spielers zu entscheiden. Es kann jedoch sein, dass einer der beiden Würfe einen Bonus bekommt. Ist es zum Beispiel sehr dunkel und gleichzeitig laut, so bekommt der Bemerkenwurf einen Malus. Ist der Schleichende aber mit lauten Glocken unterwegs, so ist diesem ein Malus zu geben.
+
+Bei einem Probenwurf können Steigerungen erreicht werden. Für je 4 die der PW über dem zu erreichenden Ziel liegt, ist eine Steigerung erreicht. Steigerungen charakterisieren besonders gelungene Aktionen, so können zusätzliche positive Effekte neben dem eigentlichen Ziel auftreten.
+
+{\rowcolors{2}{black!10!white!40}{black!50!white!50}
+\begin{table}[h!]
+\caption{Richtwerte für die SK der Proben}
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Schwierigkeit & Würfelwert \\
+\hline
+sehr leicht & 4\\
+leicht & 6\\
+normal & 9\\
+schwierig & 11\\
+sehr schwierig & 14\\
+extrem schwierig & 20\\ \hline
+\end{tabular}
+\end{table}
+}
+
+\subsection{Notwendiges Wissen}
+Ist eine Probe mit einem * markiert, so ist es notwendig, dass der Spieler die Probe mindestens einmal gesteigert haben muss, um sie benutzen zu können. Ist es notwendig dass der Spieler trotzdem auf die Probe wirft, so bekommt er einen Malus von 4.
+
+
+\section{Abgeleitete Attribute}
+Aus den Grundattributen und Proben leiten sich weitere Attribute ab, Lebenspunkte (Lp), Mana , Regeneration (Reg), Ausweichen (AU), Parieren(PA), Rüstungsklasse (RK), Initiative (Init) und der Laufenwert. Der Startwert der abgeleiteten Attribute ist in Tabelle \ref{tab:AbgeleiteteAtribute} zu sehen. Durch Levelaufstiege oder andere Effekte können diese Werte modifiziert werden.
+
+\renewcommand{\arraystretch}{1.5}
+{\rowcolors{2}{black!10!white!40}{black!50!white!50}
+\begin{table}[h!]
+\centering
+\caption{Abgeleitete Attribute}
+\label{tab:AbgeleiteteAtribute}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Abgeleitetes Attribut} & \textbf{Berechnung}\\
+\hline
+Lebenpunkte & 15 + Max Kon\\
+Regeneration & Kon\\
+Mana & Max Wil\\
+Manaregeneration & Wil\\
+Initiative & Bew\\
+Laufen & Max Bew + 1 für jede Steigerung der Sprintenprobe\\
+Ausweichen & (Max Ausweichenprobe)/2\\
+Parieren & (Max Waffenprobe)/2 + Mod durch Waffe\\
+Rüstungsklasse & max\{AU, PA\} + Rüstung
+\\
+\hline
+\end{tabular}
+\end{table}
+}
+
+\end{document}

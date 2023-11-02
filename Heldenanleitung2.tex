@@ -1,0 +1,83 @@
+\documentclass[12pt, a4paper, listof=totoc, bibliography=totoc, abstract=notoc, titlepage, captions=tableheading, cdgeometry=true, open=right, twoside=false]{scrreprt}
+%Die BCOR Option ist Bindekorrektur, das verschiebt den Text weg von der Mitte eine Buchen sodass er nicht in der Bindung verschwindet
+
+
+\addtokomafont{caption}{\small}
+%das macht die Captionschrift kleiner
+\setcapindent{0em}
+%Das legt den Einzug von Beschriftungen fest, hier auf keinen Einzug
+\usepackage[stretch=10]{microtype}
+
+\usepackage[table]{xcolor}
+\usepackage[T1]{fontenc}   
+\usepackage[utf8]{inputenc}
+
+\usepackage[ngerman]{babel}
+\usepackage{csquotes}
+
+\usepackage{subfiles}
+%Das ist damit man die einzelnen Unterdateien einfach kompilieren kann
+
+\usepackage[font=footnotesize]{subcaption}
+
+\usepackage{amsmath} 
+\usepackage{amssymb}
+\usepackage{bbold}
+\usepackage{array}
+\usepackage{graphicx} % Bilder einbinden \includegraphics{Pfad/zur/Datei(ohne Dateiendung)} 
+%\usepackage{color}
+\usepackage{tcolorbox}
+\usepackage{url}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{lmodern}
+\usepackage[pdftitle={Regelwerk}, pdfauthor={},]{hyperref}
+\usepackage{wrapfig,lipsum,booktabs}
+%Hier kannst du Titel der Datei und Autor der Datei einstellen
+
+%\usepackage{acro} %Das ist für das Abkürzungsverzeichnis in die Datei acronyms kommen die Abkürzungen und dann werden die im Text benutzten Abkürzungen automatisch ins Verzeichnis geschrieben
+%\input{acronyms}
+%\acsetup{hyperref =true, list-heading=chapter*, page-style=none, following-page=false, list-style=tabular}
+%\acsetup{list-short-format={\bfseries}}
+%\acsetup{list-short-width=2cm}
+
+
+\graphicspath{{./figures/}}
+
+
+
+
+\begin{document}
+
+
+\title{Heldenanleitung 2
+\selectlanguage{ngerman}
+\vskip 2cm
+{\normalsize
+}}
+ 
+\author{{\normalsize von} \\
+Autor }
+ 
+\date{{\normalsize \today}}
+ 
+\maketitle
+
+    
+\tableofcontents
+\newpage
+%\printacronyms[heading=addchap]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Textkörper, hier kommen dann die Pfade zu den einzelnen Latexdateien (ohne Dateiendung)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subfile{Chapters/Grundregeln/Grundregeln}
+\subfile{Chapters/Charactererstellung/Charactererstellung}
+\subfile{Chapters/Kampf/Kampf}
+\subfile{Chapters/Gods/Gods}
+\subfile{Chapters/Magie/Magie}
+
+
+
+
+\end{document}

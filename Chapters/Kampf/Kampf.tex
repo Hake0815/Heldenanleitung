@@ -1,0 +1,444 @@
+\documentclass[../../Heldenanleitung2]{subfiles}
+\begin{document}
+
+\chapter{Kampf}
+
+Kämpfe finden in einem rundenbasierten System statt. Eine Kampfrunde entspricht dem Geschehen von 5 Sekunden.
+
+\section{Initiative}
+Beginnt eine Kampfsituation, so werfen alle beteiligten Individuen auf Initiative. Die Ergebnisse legen die Reihenfolge fest in der sie dran sind, das Individuum mit dem höchsten Wert beginnt. Bei Gleichstand hat das Individuum mit der höheren maximalen Initiative Vorrang(wenn keine kritischen Würfe möglich wären). Ist auch das identisch so gibt es ein Stechen.
+
+\section{Aktionsphase}
+Wenn ein Individuum an der Reihe ist, kann es sich um seinen Laufenwert bewegen und hat eine Aktion sowie eine Bonusaktion zur Verfügung. Die Aktion kann verwendet werden um beispielsweise einen Angriff durchzuführen. Bei diversen anderen Tätigkeiten ist vom Spielleiter zu entscheiden, ob die Tätigkeit eine Aktion kostet oder wie das rufen kurzer Sätze nur eine Bonusaktion. Es sind auch freie Aktionen möglich für kurze Handlungen wie umschauen. Ein Spieler kann seine Aktionen halten, um zu einem späteren Zeitpunkt zu agieren. Dazu beschreibt er ein Szenario bei dessen Eintreten er die gewünschte Aktion durchführen will. Ist der Spieler erneut an der Reihe, ohne dass das genannte Szenario eingetreten ist, verfällt die gehaltene Aktion.
+
+Pro Runde hat man eine Reaktion, die erlaubt bestimmte Handlungen zu vollziehen, während man selbst nicht am Zug ist.
+
+\section{Aktionen}
+\renewcommand{\arraystretch}{1.5}
+{\rowcolors{2}{black!10!white!40}{black!50!white!50}
+\begin{table}
+\caption{Aktionstabelle}
+\label{tab:Aktionen}
+\begin{tabular}{|p{0.2\textwidth}|p{0.2\textwidth}|p{0.6\textwidth}|}
+\hline
+Name & Kosten & Effekt\\
+\hline
+Laufen & Laufenaktion & Laufen Meter bewegen \\
+Angreifen & Aktion & Führt Angriff durch \\
+Schleichen & Laufenaktion & Laufen/4 Meter schleichend fortbewegen\\
+Sprinten & Volle Aktion & 3*Laufen Meter in nahezu gerader Linie bewegen\\
+Kleine Aktion & Bonusaktion & Rufen, werfen, fangen o.ä.\\
+Waffe ziehen & Aktion / Bonusaktion & Wenn Probe auf Fingerfertigkeit $\geq 18$ dann schnelle Aktion, sonst Standardaktion\\
+Waffe wegstecken & Aktion / Bonusaktion & Wenn Probe auf Fingerfertigkeit $\geq 18$ dann schnelle Aktion, sonst Standardaktion\\
+Waffe fallen lassen & freie Aktion & Waffe fällt auf den Boden\\
+Defensive Kampfhaltung & keine & -3 auf Angriffswürfe und +2 auf RK. Es kann nur in eine defensive Kampfhaltung gewechselt werden, wenn in dieser Runde noch nicht angegriffen wurde.\\
+Einschüchtern & Aktion & Einschüchternprobe gegen Willenskraftprobe des Ziels. Wenn erfolgreich, Ziel wird verängstigt. Für jede Steigerung wird ein weiteres Verängstigtlevel hinzugefügt.\\
+Führen/Begeistern & Aktion & Führen/Begeistern-Probe. Wenn erfolgreich, alle Verbündeten in Hörreichweite bekommen Moral. Für jede Steigerung wird ein weiteres Morallevel hinzugefügt.\\
+Verspotten & Aktion & Verspottenprobe gegen Willenskraftprobe des Ziels. Wenn erfolgreich, Ziel wird verspottet. Für jede Steigerung wird ein weiteres Verspottenlevel hinzugefügt.\\
+Gelegenheits"-angriff & Reaktion & Wenn ein Gegner einen Gelegenheitsangriff provoziert, kann ein Nahkampfangriff gegen diesen durchgeführt werden.\\
+\hline
+\end{tabular}
+\end{table}
+}
+In Tabelle \ref{tab:Aktionen} sind mögliche Aktionen aufgezählt, die in einer Kampfsituation durchgeführt werden könnten. Es können alle erdenklichen Aktionen durchgeführt werden die in einer Situation möglich sein könnten. Der Spieler kann immer beschreiben was er tun möchte und welches Ziel so erreicht werden soll. Der Spielleiter entscheidet dann, ob es möglich ist und welche Probe gegebenenfalls notwendig ist.
+
+\section{Angriffe}
+Bei einem Angriff würfelt der Spieler auf eine Waffenprobe, dabei erhält er eventuelle Angriffsboni durch die Waffe. Ist der Probenwert größer oder gleich der Rüstungsklasse des Ziels, so trifft der Angriff. Dabei ist zu beachten, dass bei Fernkampfangriffen der Parieren wert nur dann als Grundlage der RK benutzt werden darf, wenn ein Schild benutzt wird.
+
+Bei einem Treffer wird der Schaden, wie bei der Waffe angegeben, ausgewürfelt und von den Lp des Ziels abgezogen. Eingeschränkte Bewegungsfreiheit kann sowohl Angriffswurf als auch Rüstungsklasse reduzieren. Ist einem Angriffsziel nicht klar, dass es angegriffen wird oder ist es bewegungsunfähig, so wird AU und PA auf 4 reduziert.
+
+Besitzt eine Waffe x\% Rüstungsdurchdringung und schlägt ein Angriff fehl, hätte aber getroffen, wenn das Ziel keine Rüstung getragen hätte, so wird x\% vom Schaden angerichtet.
+
+\subsection{Gezielte Angriffe und Kampfmanöver}
+Ein Spieler kann jeder Zeit die Art seines Angriffs spezialisieren um eine bestimmte Wirkung zu erreichen. Je nach dem wie der Spieler seinen Angriff deklariert, legt der Spielleiter eine Erschwernis und einen Bonus fest. Zum Beispiel kann der Spieler sagen, er zielt mit einem Schwertstoß direkt in das offene Visier des Gegners. Der Spielleiter könnte dann eine Erschwernis von 5 festlegen und wenn der Charakter trifft sind alle Schadenswürfel automatisch kritisch. Der Spieler könnte auch sagen, versucht mit seinem Angriff den Gegner zu entwaffnen, je nach Können des Gegners und Bewaffnung wäre eine Erschwernis festzulegen. Wenn der Angriff dann erfolgreich ist, würde der Angriff keinen Schaden verursachen und stattdessen würde der Angreifer die Waffen weg wirbeln oder abnehmen.
+
+In einem weiterem Beispiel kann der Charakter mit einem Angriff auf die Beine des Gegners zielen, um ihn bewegungsunfähig zu machen. In diesem Fall sollte der Spielleiter einen passenden Malus auf den Angriffswurf anwenden und bei Erfolg hat der Angriff neben Schaden auch den gewünschten Effekt. Als anderes Beispiel könnte ein Spieler sagen, dass sein Charakter die Axt in einem großen Bogen schwingt, um den Gegner neben seinem primären Ziel ebenfalls zu treffen. Dann könnte der Spielleiter den Angriff um 3 erschweren und wenn das primäre Ziel getroffen wird, hat das zweite Ziel auch die Möglichkeit getroffen zu werden.
+
+\subsection{Kampf mit zwei Waffen}
+Führt ein Charakter zwei Waffen, so kann er mit einer einzigen Angriffsaktion mit beiden Waffen angreifen. Der erste Angriffswurf erhält einen Malus von 2 und der zweite Angriff von 4.
+
+\subsection{Fernkampfangriffe}
+Fernkampfangriffe haben drei Reichweiten normale Reichweite, mittlere Reichweite und weite Reichweite. Befindet sich das Ziel eines Fernkampfangriffs innerhalb der normalen Reichweite, wird ganz normal auf Angriff geworfen. Befindet sich das Ziel in mittlere Reichweite, erhält der Angriffswurf einen Malus von 2 und in weiter Reichweite von 4. Ist bei einer Fernkampfwaffe nur eine Reichweite angegeben, ist die mittlere Reichweite die 1,5 fache Entfernung und die weite die doppelte Reichweite.
+
+\subsection{Deckung}
+Ein Individuum befindet sich in Deckung, wenn zwischen ihm und dem Angreifer Objekte oder andere Personen stehen. Sind mindestens 50\% des Ziels aus der Sicht des Angreifers verdeckt, hält der Angreifer einen Malus von 2 auf den Angriff. Sind mindestens 75\% verdeck steigt der Malus auf 5 und ist das Ziel vollständig verdeckt, scheitert der Angriff automatisch. Wird ein Fernkampfangriff auf ein Ziel in Deckung durchgeführt und schlägt fehl, kann das Hindernis welche die Deckung bereitstellt getroffen werden (nach Ermessen des Spielleiters). Insbesondere kann bei solch einem Angriff ein eigener Verbündeter getroffen werden.
+
+\subsection{Gelegenheitsangriffe}
+Standardmäßig hat jeder Charakter einen Gelegenheitsangriff pro Kampfrunde. Wird ein Gelegenheitsangriff ausgelöst, so wird wie bei einem Angriff verfahren. Gelegenheitsangriffe werden ausgelöst, wenn
+\begin{itemize}
+	\item ein Charakter sich in Nahkampfreichweite eines anderen befindet und sich von diesem entfernt ohne ihn anzugreifen.
+	\item ein Charakter aufwendige Aktionen (z.B. verarzten) vollführt und sich dabei in Nahkampfreichweite eines Gegners befindet.
+	\item ein Charakter einen Fernkampfangriff in der Nahkampfreichweite eines Gegners durchführt.
+\end{itemize}
+
+\subsection{Schleichangriffe}
+Führt ein Charakter einen Nahkampfangriff gegen ein Ziel durch, das sich dem Angreifer nicht bewusst ist, so sind die Schadenswürfel der Waffe automatisch kritisch (das betrifft keine Extrawürfel für Schleichangriffe).
+
+\subsection{Flankieren}
+Ist eine Gruppe von Individuen in einem Nahkampf verwickelt, so erhalten alle Individuen der Partei, die sich in Unterzahl befindet, einen Malus von 2 auf AU und PA.
+
+\subsection{Nahkampfreichweite}
+Wird ein Nahkampfangriff gegen einen Gegner durchgeführt, der eine höhere Nahkampfreichweite besitzt, erhält der Angreifer einen Malus auf den Angriffswurf:
+\begin{itemize}
+	\item Reichweitendifferenz > 0,4\,m: -1 auf Angriffswurf
+	\item Reichweitendifferenz > 1\,m: -2 auf Angriffswurf
+\end{itemize}
+
+\subsection{Steigerungen bei Angriffen}
+Wird bei einem Angriff eine oder mehrere Steigerungen erreicht, so steigt der Schaden um 1 pro Steigerung.
+
+\section{Überraschungsrunden}
+Wenn der Kampf für einen Teilnehmer überraschend beginnt, so setzt dieser eine Runde lang aus.
+
+\section{Waffen und Rüstungen}
+Waffen besitzen eine Reichweite und können einen Malus auf Schleichen geben. Eine Waffe gibt einen Bonus auf den Angriffswurf und den Parierenwert. Es darf immer nur ein Parierenbonus von Waffen verwendet werden, außer es wird explizit erwähnt. Trägt also ein Charakter zwei Schwerter, so wird nur der Parierenbonus eines Schwertes benutzt. 
+
+Rüstungen liefern einen Bonus für die Rüstungsklasse. Dabei schränken Rüstungen die Bewegungsfreiheit ein und limitieren so den Bewegungswürfel auf ein Maximum.
+
+\subsection{Beispielwaffen}
+
+\begin{tabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
+\hline
+\textbf{Faust} & Reichweite: 0,5\,m & Schleichen: 0 \\
+\hline
+Angriff: +0 & Schaden: Stä-1 & Parade: -3\\
+\hline
+\multicolumn{3}{|p{0.99\textwidth}|}{Schlägt der Angriff fehl und hat das Ziel eine Waffe ausgerüstet, so wird ein Gelegenheitsangriff provoziert.} \\
+\hline
+\end{tabular}
+\newline \newline\newline
+\begin{tabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
+\hline
+\textbf{Schlagring} & Reichweite: 0,5\,m & Schleichen: 0\\
+\hline
+Angriff: +0 & Schaden: Stä+1 & Parade: -3 \\
+\hline
+\multicolumn{3}{|p{0.99\textwidth}|}{Andere Waffen können ausgerüstet werden ohne die Schlagringe unauszurüsten, es gibt lediglich einen Malus von 1 auf den Angriffswurf.} \\
+\hline
+\end{tabular}
+\newline \newline\newline
+\begin{tabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
+\hline
+\textbf{Schwert (1H)} & Reichweite: 1,2\,m & Schleichen: 0\\
+\hline
+Angriff: +2 & Schaden: Stä+2 & Parade: -1\\
+\hline
+\multicolumn{3}{|p{0.99\textwidth}|}{Ausfallschritt: -2RK, +2 auf Angriffswurf, Reichweite +0,5\,m.} \\
+\hline
+\end{tabular}
+\newline \newline\newline
+\begin{tabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
+\hline
+\textbf{Langschwert (2H)} & Reichweite: 1,5\,m & Schleichen: -2 \\
+\hline
+Angriff: +3 & Schaden: Stä+1W6 & Parade: +0\\
+\hline
+\multicolumn{3}{|p{0.99\textwidth}|}{Ausfallschritt: -2RK, +2 auf Angriffswurf, Reichweite +0,5\,m.} \\
+\hline
+\end{tabular}
+\newline \newline\newline
+\begin{tabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
+\hline
+\textbf{Bidenhänder (2H)} & Reichweite: 2\,m & Schleichen: -3\\
+\hline
+Angriff: +2 & Schaden: Stä+1W10 & Parade: -1\\
+\hline
+\multicolumn{3}{|p{0.99\textwidth}|}{Ausfallschritt: -2RK, +2 auf Angriffswurf, Reichweite +0,5\,m.} \\
+\hline
+\end{tabular}
+\newline \newline\newline
+\begin{tabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
+\hline
+\textbf{Streitaxt (1H)} & Reichweite: 1\,m & Schleichen: -2\\
+\hline
+Angriff: +1 & Schaden: Stä+1W6 & Parade: -1\\
+\hline
+\multicolumn{3}{|p{0.99\textwidth}|}{50\% Rüstungsdurchdringung.} \\
+\hline
+\end{tabular}
+\newline \newline\newline
+\begin{tabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
+\hline
+\textbf{Dänenaxt (2H)} & Reichweite: 1,5\,m & Schleichen: -2\\
+\hline
+Angriff: +1 & Schaden: Stä+1W8+1 & Parade: -1\\
+\hline
+\multicolumn{3}{|p{0.99\textwidth}|}{Stoßen (Standardaktion): Kann einen Schildträger stoßen bei gewonnener Stemmen/Schieben Probe fällt Ziel zu Boden. 50\% Rüstungsdurchdringung.} \\
+\hline
+\end{tabular}
+\newline \newline\newline
+\begin{tabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
+\hline
+\textbf{Speer (1H)} & Reichweite: 2,5\,m|Max Stä/2 & Schleichen: -5\\
+\hline
+Angriff: +3 & Schaden: Stä+1W6 & Parade: -1\\
+\hline
+\multicolumn{3}{|p{0.99\textwidth}|}{} \\
+\hline
+\end{tabular}
+\newline \newline\newline
+\begin{tabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
+\hline
+\textbf{Langspeer (2H)} & Reichweite: 3,5\,m|Max Stä/4 & Schleichen: -7\\
+\hline
+Angriff: +3 & Schaden: Stä+1W8 & Parade: -1\\
+\hline
+\multicolumn{3}{|p{0.99\textwidth}|}{} \\
+\hline
+\end{tabular}
+\newline \newline\newline
+\begin{tabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
+\hline
+\textbf{Mordaxt (2H)} & Reichweite: 2\,m & Schleichen: -5\\
+\hline
+Angriff: +2 & Schaden: 2Stä+1 & Parade: -1\\
+\hline
+\multicolumn{3}{|p{0.99\textwidth}|}{100\% Rüstungsdurchdringung.} \\
+\hline
+\end{tabular}
+\newline \newline\newline
+\begin{tabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
+\hline
+\textbf{Kurzbogen (2H)} & Reichweite: 20\,m|35\,m|50\,m & Schleichen: -2 \\
+\hline
+Angriff: +2 & Schaden: Stä & Parade: keine\\
+\hline
+\multicolumn{3}{|p{0.99\textwidth}|}{Benötigt Max Stä > 5.} \\
+\hline
+\end{tabular}
+\newline \newline\newline
+\begin{tabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
+\hline
+\textbf{Bogen (2H)} & Reichweite: 25\,m|45\,m|70\,m & Schleichen: keine\\
+\hline
+Angriff: +1 & Schaden: Stä+1W4 & Parade: -3\\
+\hline
+\multicolumn{3}{|p{0.99\textwidth}|}{Benötigt Max Stä > 7.} \\
+\hline
+\end{tabular}
+\newline \newline\newline
+\begin{tabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
+\hline
+\textbf{Langbogen (2H)} & Reichweite: 25\,m|50\,m|100\,m & Schleichen: keine\\
+\hline
+Angriff: +0 & Schaden: Stä+1W6 & Parade: -3\\
+\hline
+\multicolumn{3}{|p{0.99\textwidth}|}{Benötigt Max Stä > 8.} \\
+\hline
+\end{tabular}
+\newline \newline\newline
+\begin{tabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
+\hline
+\textbf{Kriegsbogen (2H)} & Reichweite: 25\,m|60\,m|120\,m & Schleichen: keine\\
+\hline
+Angriff: -1 & Schaden: 2Stä & Parade: -4 \\
+\hline
+\multicolumn{3}{|p{0.99\textwidth}|}{Benötigt Max Stä > 9.} \\
+\hline
+\end{tabular}
+\newline \newline\newline
+\begin{tabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
+\hline
+\textbf{Kleine Armbrust (1H)} & Reichweite: 15\,m|25\,m|35\,m & Schleichen: 0 \\
+\hline
+Angriff: +0 & Schaden: 1W8 & Parade: keine\\
+\hline
+\multicolumn{3}{|p{0.99\textwidth}|}{Nachladen kostet eine Standardaktion.} \\
+\hline
+\end{tabular}
+\newline \newline\newline
+\begin{tabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
+\hline
+\textbf{Mittlere Armbrust (2H)} & Reichweite: 20\,m|40\,m|60\,m & Schleichen: -2\\
+\hline
+Angriff: +0 & Schaden: 3W6 & Parade: keine\\
+\hline
+\multicolumn{3}{|p{0.99\textwidth}|}{Nachladen kostet eine volle Aktion.} \\
+\hline
+\end{tabular}
+\newline \newline\newline
+\begin{tabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
+\hline
+\textbf{Schwere Armbrust (2H)} & Reichweite: 25\,m|50\,m|95\,m & Schleichen: keine\\
+\hline
+Angriff: +0 & Schaden: 5W6 & Parade: -5\\
+\hline
+\multicolumn{3}{|p{0.99\textwidth}|}{Nachladen kostet zwei volle Aktionen.} \\
+\hline
+\end{tabular}
+\newline \newline\newline
+\begin{tabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
+\hline
+\textbf{Dolch (1H)} & Reichweite: 0,6\,m & Schleichen: 0\\
+\hline
+Angriff: +0 & Schaden: Ges+2 & Parade: -1/-2\\
+\hline
+\multicolumn{3}{|p{0.99\textwidth}|}{Dolch kann immer als Schnelle Aktion gezogen werden.} \\
+\hline
+\end{tabular}
+\newline \newline\newline
+\begin{tabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
+\hline
+\textbf{Schild (1H)} & Reichweite: 0,6\,m & Schleichen: -2 \\
+\hline
+Angriff: +0 & Schaden: Stä & Parade: +3\\
+\hline
+\multicolumn{3}{|p{0.99\textwidth}|}{Schildstoß (Standardaktion): Kann einen Gegner stoßen, bei gewonnener Stemmen/Schieben Probe fällt Ziel zu Boden. 
+
+Während der Schild ausgerüstet ist werden alle Angriffswürfe um 1 reduziert.
+
+Kann im Kampf durch wuchtige Schläge zerstört werden.
+
+Ermöglicht das Parieren von Fernkampfangriffen.
+}\\
+\hline
+\end{tabular}
+\newline \newline\newline
+\begin{tabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
+\hline
+\textbf{Faustschild (1H)} & Reichweite: 0,6\,m & Schleichen: 0 \\
+\hline
+Angriff: +1 & Schaden: Stä+1 & Parade: +1\\
+\hline
+\multicolumn{3}{|p{0.99\textwidth}|}{
+Der Paradewert kann auf eine andere ausgerüstete Waffe addiert werden.
+
+Ermöglicht das Parieren von Fernkampfangriffen.
+} \\
+\hline
+\end{tabular}
+\newline \newline\newline
+\begin{tabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
+\hline
+\textbf{Schwertbrecher (Messer, 1H)} & Reichweite: 0,6\,m & Schleichen: 0 \\
+\hline
+Angriff: +0 & Schaden: Stä-1 & Parade: +1\\
+\hline
+\multicolumn{3}{|p{0.99\textwidth}|}{
+Immer wenn ein Nahkampfangriff erfolgreich mit dem Schwertbrecher pariert wird, kann die Reaktion genutzt werden um den parierten Angreifer zu entwaffnen. Dazu wird ein Angriffswurf mit dem Schwertbrecher gegen den Parierenwert des Gegners geworfen, dabei darf der Gegner keine Parierenboni von Nebenhandwaffen benutzen. Ist der Angriff erfolgreich, wird die Waffe des Gegners zu Boden geworfen.
+} \\
+\hline
+\end{tabular}
+
+\subsection{Beispielrüstungen}
+\begin{multicols}{2}
+\begin{tabular}{|p{0.2\textwidth}|p{0.2\textwidth}|}
+\hline
+\textbf{Gambeson} & RK: +2\\
+\hline
+\multicolumn{2}{|p{0.4\textwidth}|}{Max Bewegungswürfel 1W10, -4 Schwimmen} \\
+\hline
+\end{tabular} 
+
+
+\begin{tabular}{|p{0.2\textwidth}|p{0.2\textwidth}|}
+\hline
+\textbf{Kettenhemd} & RK: +3\\
+\hline
+\multicolumn{2}{|p{0.4\textwidth}|}{Max Bewegungswürfel 1W8, -5 Schwimmen} \\
+\hline
+\end{tabular}
+
+\begin{tabular}{|p{0.2\textwidth}|p{0.2\textwidth}|}
+\hline
+\textbf{Lederrüstung} & RK: +2\\
+\hline
+\multicolumn{2}{|p{0.4\textwidth}|}{Max Bewegungswürfel 1W10, -2 Schwimmen, edleres Aussehen} \\
+\hline
+\end{tabular}
+
+\begin{tabular}{|p{0.2\textwidth}|p{0.2\textwidth}|}
+\hline
+\textbf{Plattenrüstung} & RK: +4\\
+\hline
+\multicolumn{2}{|p{0.4\textwidth}|}{Mindestens 1W8 Kon, Max Bewegungswürfel 1W6, -7 Schwimmen, edles Aussehen} \\
+\hline
+\end{tabular}
+\end{multicols}
+
+\section{Schaden und Regeneration}
+
+\subsection{Fallschaden}
+Fällt ein Charakter mindestens 2\,m, muss er eine Akrobatikprobe ablegen. Der Grundfallschaden beträgt
+\begin{align*}
+	\left(\frac{\text{Höhe}}{\text{m}}-2\right)\text{W}6.
+\end{align*}
+Ist die Akrobatikprobe erfolgreich wird der Schaden um 1W6 und um je einen weiteren W6 pro Steigerung reduziert.
+
+Dies gilt als grobe Richtlinie, die Umstände können den Fallschaden beeinflussen. Fällt ein Charakter beispielsweise von einem Baum, können Äste seinen Sturz abschwächen.
+
+\subsection{Tauchen/Ersticken}
+Wenn Atmung nicht möglich ist, muss ein Charakter bei voller Lunge nach 15*Max Kon sec (3*Max Kon Kampfrunden) alle 5 sec/je Kampfrunde eine Probe auf Ausdauer gegen die Erschwernis von 15 (Esn steigt je Wurf um 2) werfen. Beim ersten Fehlschlag fällt der Charakter in Ohnmacht, je weiteren erhält er eine Narbe auf Bil.
+
+\subsection{Schaden/Ohnmacht/Tod}
+Fallen die Lebenspunkte auf 0 oder niedriger, so muss der Charakter eine Probe auf Wille oder Ausdauer gegen die Erschwernis von 9-Lp werfen. Schlägt die Probe fehl, fällt er in Ohnmacht.
+
+Fallen die Lebenspunkte unter -Max Kon, so muss der Charakter eine Probe auf Wille oder Ausdauer gegen die Erschwernis von 10-Lp werfen. Schlägt die Probe fehl, stirbt der Charakter.
+
+In der nächsten Ruhephase wird die Schwere des Schadens bestimmt.
+\begin{align*}
+ W = \text{PW}\left(\text{Medizin}\right) + 1\text{W}20
+\end{align*}
+Der zu erreichende Wert hängt von den verlorenen Lebenspunkten ab. Der Wundenwurf $W$ muss größer als die Zahl in der folgenden Tabelle sein, sonst erhält der Charakter eine Narbe.
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+$10 \% < \frac{\text{Lp}}{\text{Max Lp}} \le 25 \%$ & $W > 10$ \\ \hline
+$0 < \frac{\text{Lp}}{\text{Max Lp}} \le 10 \%$ & $W > 19$\\ \hline
+$\frac{\text{Lp}}{\text{Max Lp}} \le 0$ & $W > 28$\\ \hline
+\end{tabular}
+\end{center}
+
+\subsection{Narben}
+Narben verringern den Attributswert um 1. Erleidet ein Charakter an einem Körperteil die dritte Narbe, stirbt das Körperteil ab und der Charakter stirbt ggf. Das betroffene Körperteil wird mit einem W10 ausgewürfelt, außer es ergibt sich aus dem Spielverlauf welches Körperteil die Narbe erhält.
+
+{\rowcolors{2}{black!10!white!40}{black!50!white!50}
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+Würfelergebnis & Körperteil & Attribut \\ \hline
+1 & Augen, Ohren, Nase & War \\ 
+2 & Hinterkopf & Bil \\ 
+3 & Gesicht & Cha \\ 
+4 & Hand & Ges \\ 
+5 & Becken & Stä \\ 
+6 & Fuß & Wil \\ 
+7 & Brustkorb & Kon \\ 
+8 & Bauch & Hum \\ 
+9 & Stirn & Int \\ 
+10 & Bein & Bew \\ \hline
+\end{tabular}
+\end{center}
+}
+
+\subsection{Heilung}
+Nach einem Kampf kann ein Charakter 50\% des erhaltenen Schadens regenerieren indem er verschnauft. Dabei wird pro Minute ein Lebenspunkt regeneriert.
+
+In jeder längeren Ruhephase in dem sich der Charakter ausruht (in der Regel nachts beim Schlafen), kann der Regenerationswert für Lebenspunkte und Mana ausgewürfelt werden und zu den Lebenspunkten bzw. Manapunkten addiert werden.
+
+\section{Zustände}
+
+In einem Kampf kann ein Individuum von verschiedenen Zuständen betroffen sein. Das kann durch äußere Umstände, bestimmte Aktionen oder Zauber geschehen. Zustände können in verschiedenen Level auftreten. Erleidet ein Individuum einen Zustand von dem es bereits betroffen ist, wirkt der mit dem höherem Level.
+
+\subsubsection{Verängstigt}
+Pro Verängstigtlevel -1 auf alle Angriffswürfe. Am Ende jeder Runde fällt das Verängstigtlevel um 1.
+
+\subsubsection{Furcht}
+Ist ein Individuum von Furcht ergriffen, ergreift es die Flucht. Zu Beginn jeder Runde wird eine Willenskraftprobe mit der SK der Furcht geworfen. Ist die Probe erfolgreich endet der Zustand. Nach jedem Misserfolg fällt die SK der Furcht um 2.
+
+\subsubsection{Moral}
+Pro Morallevel +1 auf alle Angriffswürfe. Der Zustand hält bis zum Ende des Kampfes an.
+
+\subsubsection{Verspottet}
+Pro Verspottetlevel -1 auf AU und PA. Das verspottete Individuum kämpft sich in die Richtung des Ursprungs des Spottes. Wann immer das verspottete Individuum von einem anderen als den Spottursprung getroffen wird, fällt des Spottlevel um 1.
+
+\subsubsection{Verlangsamt}
+Verlangsamte Individuen bewegen sich mit halber Geschwindigkeit fort.
+
+\subsubsection{Starke Verlangsamung}
+Stark verlangsamte Individuen bewegen sich mit viertel Geschwindigkeit fort.
+
+\subsubsection{Niedergeschlagen}
+Niedergeschlagene Wesen liegen am Boden. Das Aufstehen Kostet den halben Laufenwert. Niedergeschlagene Wesen halbieren ihre AU und PA.
+
+\end{document}
