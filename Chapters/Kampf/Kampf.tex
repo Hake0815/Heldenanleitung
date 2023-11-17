@@ -28,8 +28,8 @@ Angreifen & Aktion & Führt Angriff durch \\
 Schleichen & Laufenaktion & Laufen/4 Meter schleichend fortbewegen\\
 Sprinten & Volle Aktion & 3*Laufen Meter in nahezu gerader Linie bewegen\\
 Kleine Aktion & Bonusaktion & Rufen, werfen, fangen o.ä.\\
-Waffe ziehen & Aktion / Bonusaktion & Wenn Probe auf Fingerfertigkeit $\geq 18$ dann schnelle Aktion, sonst Standardaktion\\
-Waffe wegstecken & Aktion / Bonusaktion & Wenn Probe auf Fingerfertigkeit $\geq 18$ dann schnelle Aktion, sonst Standardaktion\\
+Waffe ziehen & Aktion / Bonusaktion & Wenn Probe auf Fingerfertigkeit $\geq 13$ dann Bonusaktion, sonst Standardaktion\\
+Waffe wegstecken & Aktion / Bonusaktion & Wenn Probe auf Fingerfertigkeit $\geq 13$ dann Bonusaktion, sonst Standardaktion\\
 Waffe fallen lassen & freie Aktion & Waffe fällt auf den Boden\\
 Defensive Kampfhaltung & keine & -3 auf Angriffswürfe und +2 auf RK. Es kann nur in eine defensive Kampfhaltung gewechselt werden, wenn in dieser Runde noch nicht angegriffen wurde.\\
 Einschüchtern & Aktion & Einschüchternprobe gegen Willenskraftprobe des Ziels. Wenn erfolgreich, Ziel wird verängstigt. Für jede Steigerung wird ein weiteres Verängstigtlevel hinzugefügt.\\
@@ -50,7 +50,7 @@ Bei einem Treffer wird der Schaden, wie bei der Waffe angegeben, ausgewürfelt u
 Besitzt eine Waffe x\% Rüstungsdurchdringung und schlägt ein Angriff fehl, hätte aber getroffen, wenn das Ziel keine Rüstung getragen hätte, so wird x\% vom Schaden angerichtet.
 
 \subsection{Gezielte Angriffe und Kampfmanöver}
-Ein Spieler kann jeder Zeit die Art seines Angriffs spezialisieren um eine bestimmte Wirkung zu erreichen. Je nach dem wie der Spieler seinen Angriff deklariert, legt der Spielleiter eine Erschwernis und einen Bonus fest. Zum Beispiel kann der Spieler sagen, er zielt mit einem Schwertstoß direkt in das offene Visier des Gegners. Der Spielleiter könnte dann eine Erschwernis von 5 festlegen und wenn der Charakter trifft sind alle Schadenswürfel automatisch kritisch. Der Spieler könnte auch sagen, versucht mit seinem Angriff den Gegner zu entwaffnen, je nach Können des Gegners und Bewaffnung wäre eine Erschwernis festzulegen. Wenn der Angriff dann erfolgreich ist, würde der Angriff keinen Schaden verursachen und stattdessen würde der Angreifer die Waffen weg wirbeln oder abnehmen.
+Ein Spieler kann jeder Zeit die Art seines Angriffs spezifizieren um eine bestimmte Wirkung zu erreichen. Je nach dem wie der Spieler seinen Angriff deklariert, legt der Spielleiter eine Erschwernis und einen Bonus fest. Zum Beispiel kann der Spieler sagen, er zielt mit einem Schwertstoß direkt in das offene Visier des Gegners. Der Spielleiter könnte dann eine Erschwernis von 5 festlegen und wenn der Charakter trifft sind alle Schadenswürfel automatisch kritisch. Der Spieler könnte auch sagen, versucht mit seinem Angriff den Gegner zu entwaffnen, je nach Können des Gegners und Bewaffnung wäre eine Erschwernis festzulegen. Wenn der Angriff dann erfolgreich ist, würde der Angriff keinen Schaden verursachen und stattdessen würde der Angreifer die Waffen weg wirbeln oder abnehmen.
 
 In einem weiterem Beispiel kann der Charakter mit einem Angriff auf die Beine des Gegners zielen, um ihn bewegungsunfähig zu machen. In diesem Fall sollte der Spielleiter einen passenden Malus auf den Angriffswurf anwenden und bei Erfolg hat der Angriff neben Schaden auch den gewünschten Effekt. Als anderes Beispiel könnte ein Spieler sagen, dass sein Charakter die Axt in einem großen Bogen schwingt, um den Gegner neben seinem primären Ziel ebenfalls zu treffen. Dann könnte der Spielleiter den Angriff um 3 erschweren und wenn das primäre Ziel getroffen wird, hat das zweite Ziel auch die Möglichkeit getroffen zu werden.
 
@@ -91,7 +91,7 @@ Wird bei einem Angriff eine oder mehrere Steigerungen erreicht, so steigt der Sc
 Wenn der Kampf für einen Teilnehmer überraschend beginnt, so setzt dieser eine Runde lang aus.
 
 \section{Waffen und Rüstungen}
-Waffen besitzen eine Reichweite und können einen Malus auf Schleichen geben. Eine Waffe gibt einen Bonus auf den Angriffswurf und den Parierenwert. Es darf immer nur ein Parierenbonus von Waffen verwendet werden, außer es wird explizit erwähnt. Trägt also ein Charakter zwei Schwerter, so wird nur der Parierenbonus eines Schwertes benutzt. 
+Waffen besitzen eine Reichweite und können einen Malus auf Schleichen geben. Eine Waffe gibt einen Bonus auf den Angriffswurf und den Parierenwert. Es darf immer nur ein Parierenbonus von Waffen verwendet werden, außer es wird explizit erwähnt. Trägt also ein Charakter zwei Schwerter, so wird nur der Parierenbonus eines Schwertes benutzt. Einige Waffen können sowohl einhändig als auch zweihändig geführt werden. Die jeweiligen unterschiedlichen Werte sind durch einen / gekennzeichnet.
 
 Rüstungen liefern einen Bonus für die Rüstungsklasse. Dabei schränken Rüstungen die Bewegungsfreiheit ein und limitieren so den Bewegungswürfel auf ein Maximum.
 
@@ -101,7 +101,7 @@ Rüstungen liefern einen Bonus für die Rüstungsklasse. Dabei schränken Rüstu
 \hline
 \textbf{Faust} & Reichweite: 0,5\,m & Schleichen: 0 \\
 \hline
-Angriff: +0 & Schaden: Stä-1 & Parade: -3\\
+Angriff: +0 & Schaden: Stä-1 & Parade: -2\\
 \hline
 \multicolumn{3}{|p{0.99\textwidth}|}{Schlägt der Angriff fehl und hat das Ziel eine Waffe ausgerüstet, so wird ein Gelegenheitsangriff provoziert.} \\
 \hline
@@ -111,7 +111,7 @@ Angriff: +0 & Schaden: Stä-1 & Parade: -3\\
 \hline
 \textbf{Schlagring} & Reichweite: 0,5\,m & Schleichen: 0\\
 \hline
-Angriff: +0 & Schaden: Stä+1 & Parade: -3 \\
+Angriff: +0 & Schaden: Stä+2 & Parade: -2 \\
 \hline
 \multicolumn{3}{|p{0.99\textwidth}|}{Andere Waffen können ausgerüstet werden ohne die Schlagringe unauszurüsten, es gibt lediglich einen Malus von 1 auf den Angriffswurf.} \\
 \hline
@@ -121,7 +121,7 @@ Angriff: +0 & Schaden: Stä+1 & Parade: -3 \\
 \hline
 \textbf{Schwert (1H)} & Reichweite: 1,2\,m & Schleichen: 0\\
 \hline
-Angriff: +2 & Schaden: Stä+2 & Parade: -1\\
+Angriff: +2 & Schaden: Stä+2 & Parade: +0\\
 \hline
 \multicolumn{3}{|p{0.99\textwidth}|}{Ausfallschritt: -2RK, +2 auf Angriffswurf, Reichweite +0,5\,m.} \\
 \hline
@@ -129,9 +129,9 @@ Angriff: +2 & Schaden: Stä+2 & Parade: -1\\
 \newline \newline\newline
 \begin{tabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
 \hline
-\textbf{Langschwert (2H)} & Reichweite: 1,5\,m & Schleichen: -2 \\
+\textbf{Langschwert (1H/2H)} & Reichweite: 1,5\,m & Schleichen: -2 \\
 \hline
-Angriff: +3 & Schaden: Stä+1W6 & Parade: +0\\
+Angriff: +0/+3 & Schaden: Stä+1W6 & Parade: +1\\
 \hline
 \multicolumn{3}{|p{0.99\textwidth}|}{Ausfallschritt: -2RK, +2 auf Angriffswurf, Reichweite +0,5\,m.} \\
 \hline
@@ -141,7 +141,7 @@ Angriff: +3 & Schaden: Stä+1W6 & Parade: +0\\
 \hline
 \textbf{Bidenhänder (2H)} & Reichweite: 2\,m & Schleichen: -3\\
 \hline
-Angriff: +2 & Schaden: Stä+1W10 & Parade: -1\\
+Angriff: +2 & Schaden: Stä+1W10 & Parade: +0\\
 \hline
 \multicolumn{3}{|p{0.99\textwidth}|}{Ausfallschritt: -2RK, +2 auf Angriffswurf, Reichweite +0,5\,m.} \\
 \hline
@@ -149,9 +149,9 @@ Angriff: +2 & Schaden: Stä+1W10 & Parade: -1\\
 \newline \newline\newline
 \begin{tabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
 \hline
-\textbf{Streitaxt (1H)} & Reichweite: 1\,m & Schleichen: -2\\
+\textbf{Streitaxt (1H/2H)} & Reichweite: 1\,m & Schleichen: -3\\
 \hline
-Angriff: +1 & Schaden: Stä+1W6 & Parade: -1\\
+Angriff: +1 & Schaden: Stä+(1W4/+1W6) & Parade: +0\\
 \hline
 \multicolumn{3}{|p{0.99\textwidth}|}{50\% Rüstungsdurchdringung.} \\
 \hline
@@ -161,7 +161,7 @@ Angriff: +1 & Schaden: Stä+1W6 & Parade: -1\\
 \hline
 \textbf{Dänenaxt (2H)} & Reichweite: 1,5\,m & Schleichen: -2\\
 \hline
-Angriff: +1 & Schaden: Stä+1W8+1 & Parade: -1\\
+Angriff: +1 & Schaden: Stä+1W8+1 & Parade: +0\\
 \hline
 \multicolumn{3}{|p{0.99\textwidth}|}{Stoßen (Standardaktion): Kann einen Schildträger stoßen bei gewonnener Stemmen/Schieben Probe fällt Ziel zu Boden. 50\% Rüstungsdurchdringung.} \\
 \hline
@@ -169,9 +169,9 @@ Angriff: +1 & Schaden: Stä+1W8+1 & Parade: -1\\
 \newline \newline\newline
 \begin{tabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
 \hline
-\textbf{Speer (1H)} & Reichweite: 2,5\,m|Max Stä/2 & Schleichen: -5\\
+\textbf{Speer (1H/2H)} & Reichweite: 2\,m|Max Stä*2 & Schleichen: -5\\
 \hline
-Angriff: +3 & Schaden: Stä+1W6 & Parade: -1\\
+Angriff: +2/+4 & Schaden: Stä+1W6 & Parade: -1/+0\\
 \hline
 \multicolumn{3}{|p{0.99\textwidth}|}{} \\
 \hline
@@ -179,9 +179,9 @@ Angriff: +3 & Schaden: Stä+1W6 & Parade: -1\\
 \newline \newline\newline
 \begin{tabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
 \hline
-\textbf{Langspeer (2H)} & Reichweite: 3,5\,m|Max Stä/4 & Schleichen: -7\\
+\textbf{Spieß (2H)} & Reichweite: 3,5\,m|Max Stä/4 & Schleichen: -7\\
 \hline
-Angriff: +3 & Schaden: Stä+1W8 & Parade: -1\\
+Angriff: +3 & Schaden: Stä+1W8 & Parade: +0\\
 \hline
 \multicolumn{3}{|p{0.99\textwidth}|}{} \\
 \hline
@@ -191,7 +191,7 @@ Angriff: +3 & Schaden: Stä+1W8 & Parade: -1\\
 \hline
 \textbf{Mordaxt (2H)} & Reichweite: 2\,m & Schleichen: -5\\
 \hline
-Angriff: +2 & Schaden: 2Stä+1 & Parade: -1\\
+Angriff: +2 & Schaden: 2Stä+1 & Parade: +0\\
 \hline
 \multicolumn{3}{|p{0.99\textwidth}|}{100\% Rüstungsdurchdringung.} \\
 \hline
@@ -211,7 +211,7 @@ Angriff: +2 & Schaden: Stä & Parade: keine\\
 \hline
 \textbf{Bogen (2H)} & Reichweite: 25\,m|45\,m|70\,m & Schleichen: keine\\
 \hline
-Angriff: +1 & Schaden: Stä+1W4 & Parade: -3\\
+Angriff: +1 & Schaden: Stä+1W4 & Parade: keine\\
 \hline
 \multicolumn{3}{|p{0.99\textwidth}|}{Benötigt Max Stä > 7.} \\
 \hline
@@ -221,7 +221,7 @@ Angriff: +1 & Schaden: Stä+1W4 & Parade: -3\\
 \hline
 \textbf{Langbogen (2H)} & Reichweite: 25\,m|50\,m|100\,m & Schleichen: keine\\
 \hline
-Angriff: +0 & Schaden: Stä+1W6 & Parade: -3\\
+Angriff: +0 & Schaden: Stä+1W6 & Parade: keine\\
 \hline
 \multicolumn{3}{|p{0.99\textwidth}|}{Benötigt Max Stä > 8.} \\
 \hline
@@ -231,7 +231,7 @@ Angriff: +0 & Schaden: Stä+1W6 & Parade: -3\\
 \hline
 \textbf{Kriegsbogen (2H)} & Reichweite: 25\,m|60\,m|120\,m & Schleichen: keine\\
 \hline
-Angriff: -1 & Schaden: 2Stä & Parade: -4 \\
+Angriff: -1 & Schaden: 2Stä & Parade: keine \\
 \hline
 \multicolumn{3}{|p{0.99\textwidth}|}{Benötigt Max Stä > 9.} \\
 \hline
@@ -261,7 +261,7 @@ Angriff: +0 & Schaden: 3W6 & Parade: keine\\
 \hline
 \textbf{Schwere Armbrust (2H)} & Reichweite: 25\,m|50\,m|95\,m & Schleichen: keine\\
 \hline
-Angriff: +0 & Schaden: 5W6 & Parade: -5\\
+Angriff: +0 & Schaden: 5W6 & Parade: keine\\
 \hline
 \multicolumn{3}{|p{0.99\textwidth}|}{Nachladen kostet zwei volle Aktionen.} \\
 \hline
@@ -271,7 +271,7 @@ Angriff: +0 & Schaden: 5W6 & Parade: -5\\
 \hline
 \textbf{Dolch (1H)} & Reichweite: 0,6\,m & Schleichen: 0\\
 \hline
-Angriff: +0 & Schaden: Ges+2 & Parade: -1/-2\\
+Angriff: +1 & Schaden: Ges+2 & Parade: \{+0,-1\}\\
 \hline
 \multicolumn{3}{|p{0.99\textwidth}|}{Dolch kann immer als Schnelle Aktion gezogen werden.} \\
 \hline
@@ -283,7 +283,7 @@ Angriff: +0 & Schaden: Ges+2 & Parade: -1/-2\\
 \hline
 Angriff: +0 & Schaden: Stä & Parade: +3\\
 \hline
-\multicolumn{3}{|p{0.99\textwidth}|}{Schildstoß (Standardaktion): Kann einen Gegner stoßen, bei gewonnener Stemmen/Schieben Probe fällt Ziel zu Boden. 
+\multicolumn{3}{|p{0.99\textwidth}|}{Schildstoß (Standardaktion): Kann einen Gegner stoßen, bei gewonnener Stemmen/Schieben(+4) Probe fällt Ziel zu Boden. 
 
 Während der Schild ausgerüstet ist werden alle Angriffswürfe um 1 reduziert.
 
@@ -368,12 +368,14 @@ Ist die Akrobatikprobe erfolgreich wird der Schaden um 1W6 und um je einen weite
 Dies gilt als grobe Richtlinie, die Umstände können den Fallschaden beeinflussen. Fällt ein Charakter beispielsweise von einem Baum, können Äste seinen Sturz abschwächen.
 
 \subsection{Tauchen/Ersticken}
-Wenn Atmung nicht möglich ist, muss ein Charakter bei voller Lunge nach 15*Max Kon sec (3*Max Kon Kampfrunden) alle 5 sec/je Kampfrunde eine Probe auf Ausdauer gegen die Erschwernis von 15 (Esn steigt je Wurf um 2) werfen. Beim ersten Fehlschlag fällt der Charakter in Ohnmacht, je weiteren erhält er eine Narbe auf Bil.
+Wenn Atmung nicht möglich ist, muss ein Charakter bei voller Lunge nach 15*Max Kon Sekunden (3*Max Kon Kampfrunden) alle 5 Sekunden/je Kampfrunde eine Probe auf Ausdauer gegen die Erschwernis von 12 (Esn steigt je Wurf um 2) werfen. Beim ersten Fehlschlag fällt der Charakter in Ohnmacht, je weiteren erhält er eine Narbe auf Bil.
 
 \subsection{Schaden/Ohnmacht/Tod}
-Fallen die Lebenspunkte auf 0 oder niedriger, so muss der Charakter eine Probe auf Wille oder Ausdauer gegen die Erschwernis von 9-Lp werfen. Schlägt die Probe fehl, fällt er in Ohnmacht.
+Fallen die Lebenspunkte auf 0 oder niedriger, muss der Charakter eine Probe auf Wille oder Ausdauer gegen die Erschwernis von 9-Lp werfen. Schlägt die Probe fehl, fällt er in Ohnmacht.
 
 Fallen die Lebenspunkte unter -Max Kon, so muss der Charakter eine Probe auf Wille oder Ausdauer gegen die Erschwernis von 10-Lp werfen. Schlägt die Probe fehl, stirbt der Charakter.
+
+Erhält ein Charakter Schaden in Höhe von mehr als 50\% seiner maximalen Lp, ist er schwer verwundet. Schwer verwundete Charaktere erhalten einen Malus von -1 auf alle Proben. Der Malus hält so lange an bis der Charakter wieder mehr als 50\% seiner Lp erlangt hat.
 
 In der nächsten Ruhephase wird die Schwere des Schadens bestimmt.
 \begin{align*}
@@ -383,9 +385,10 @@ Der zu erreichende Wert hängt von den verlorenen Lebenspunkten ab. Der Wundenwu
 \begin{center}
 \begin{tabular}{|l|l|}
 \hline
-$10 \% < \frac{\text{Lp}}{\text{Max Lp}} \le 25 \%$ & $W > 10$ \\ \hline
-$0 < \frac{\text{Lp}}{\text{Max Lp}} \le 10 \%$ & $W > 19$\\ \hline
-$\frac{\text{Lp}}{\text{Max Lp}} \le 0$ & $W > 28$\\ \hline
+$25 \% < \frac{\text{Lp}}{\text{Max Lp}} \le 50 \%$ & $W \ge 8$ \\ \hline
+$10 \% < \frac{\text{Lp}}{\text{Max Lp}} \le 25 \%$ & $W \ge 12$ \\ \hline
+$0 < \frac{\text{Lp}}{\text{Max Lp}} \le 10 \%$ & $W \ge 19$\\ \hline
+$\frac{\text{Lp}}{\text{Max Lp}} \le 0$ & $W \ge 25$\\ \hline
 \end{tabular}
 \end{center}
 
@@ -412,7 +415,7 @@ Würfelergebnis & Körperteil & Attribut \\ \hline
 }
 
 \subsection{Heilung}
-Nach einem Kampf kann ein Charakter 50\% des erhaltenen Schadens regenerieren indem er verschnauft. Dabei wird pro Minute ein Lebenspunkt regeneriert.
+Nach einem Kampf kann ein Charakter für 20 Minuten verschnaufen. Dazu wirft er einen Regenerationswurf für Lebenspunkte und heilt sich um den geworfen Wert.
 
 In jeder längeren Ruhephase in dem sich der Charakter ausruht (in der Regel nachts beim Schlafen), kann der Regenerationswert für Lebenspunkte und Mana ausgewürfelt werden und zu den Lebenspunkten bzw. Manapunkten addiert werden.
 
@@ -439,6 +442,6 @@ Verlangsamte Individuen bewegen sich mit halber Geschwindigkeit fort.
 Stark verlangsamte Individuen bewegen sich mit viertel Geschwindigkeit fort.
 
 \subsubsection{Niedergeschlagen}
-Niedergeschlagene Wesen liegen am Boden. Das Aufstehen Kostet den halben Laufenwert. Niedergeschlagene Wesen halbieren ihre AU und PA.
+Niedergeschlagene Wesen liegen am Boden. Das Aufstehen Kostet den halben Laufenwert. Niedergeschlagene Wesen halbieren ihre AU und PA. Fernkampfangriffe die nur durch Betätigung eines Schalters durchgeführt werden erhalten einen Bonus von 2. Für Fernkampfangriffe aus mehr als 10m gilt ein Niedergeschlagenes Wesen als 50\% verdeckt und bei mehr als 25m als 75\% verdeckt.
 
 \end{document}

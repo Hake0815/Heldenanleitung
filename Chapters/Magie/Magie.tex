@@ -3,7 +3,7 @@
 
 \chapter{Magie}
 
-Alle Zauber sind in die Magieschulen Verzauberung, Beschwörung, Zerstörung und Veränderung, eingeteilt. Wenn ein Zauber gewirkt wird, muss eine Zauberprobe der jeweiligen Magieschule geworfen werden. Jeder Zauber hat entweder eine individuelle Schwierigkeit (SK) oder es ist eine Gegenprobe (GP) vom Ziel durchzuführen um ihn abzuwenden. Einen Zauber durchzuführen kostet immer Mana. Zauber bei denen Manakosten pro Runde angegeben sind, müssen aktiv aufrechtgehalten werden. Zauber können gesteigert werden. Für je 4 Punkte die der Probenwert (PW) der Zauberprobe über der SK ist, kann der Zauber gesteigert werden. Ist zum Beispiel die SK 6 und der PW 17, sind 2 Steigerungen erreicht. Für Fernangriffszauber, bei denen 3 Reichweiten angegeben sind und gegen die RK bzw. AU des Ziels gewürfelt wird, gelten die üblichen Regeln für Fernangriffe.
+Alle Zauber sind in die Magieschulen Verzauberung, Beschwörung, Zerstörung und Veränderung, eingeteilt. Wenn ein Zauber gewirkt wird, muss eine Zauberprobe der jeweiligen Magieschule geworfen werden. Jeder Zauber hat entweder eine individuelle Schwierigkeit (SK) oder es ist eine Gegenprobe (GP) vom Ziel durchzuführen um ihn abzuwenden. Einen Zauber durchzuführen kostet immer Mana. Schlägt ein Zauber fehl der nicht nicht gegen AU oder RK des Ziels gewirkt wurde, wird nur die Hälfte der Manakosten vom Mana abgezogen. Dabei wird zu Gunsten des Spielers gerundet, aber es wird immer mindestens 1 Mana verbraucht. Zauber bei denen Manakosten pro Runde angegeben sind, müssen aktiv aufrechtgehalten werden. Zauber können gesteigert werden. Für je 4 Punkte die der Probenwert (PW) der Zauberprobe über der SK ist, kann der Zauber gesteigert werden. Ist zum Beispiel die SK 6 und der PW 17, sind 2 Steigerungen erreicht. Für Fernangriffszauber, bei denen 3 Reichweiten angegeben sind und gegen die RK bzw. AU des Ziels gewürfelt wird, gelten die üblichen Regeln für Fernangriffe. 
 \\
 
 \renewcommand{\arraystretch}{1.2}
@@ -68,7 +68,7 @@ ZW kann ein Tier in 20\,m Entfernung beruhigen, dieses ist nicht mehr aggressiv.
 \begin{tabularx}{\textwidth}{X|X|X}
 Standardaktion & Reichweite: selbst & Dauer: Manakosten h
 \end{tabularx} \\ \hline
-ZW kann im Dunkeln sehen. Alle Mali durch Dunkelheit werden um 4(+1xSteigerung) verringert.
+ZW kann im Dunkeln sehen. Alle Mali durch Dunkelheit werden um 4(+1$\times$Steigerung) verringert.
 \\ \hline
 \end{tabular}
 \\\\\\
@@ -128,7 +128,7 @@ ZW löst eine Verwirrung in einem Lebewesen in 20 m Reichweite aus. Das Opfer wi
 \begin{tabularx}{\textwidth}{X|X|X}
 Volle Aktion & Reichweite: 20 & Dauer: beliebig
 \end{tabularx} \\ \hline
-ZW lässt das Blut eines Ziels kochen. Richtet immer wenn das Ziel an der Reihe ist Wil(+1xSteigerung) Magieschaden an.
+ZW lässt das Blut eines Ziels kochen. Richtet immer wenn das Ziel an der Reihe ist Wil(+1W4 pro Steigerung) Magieschaden an.
 \\ \hline
 \end{tabular}
 \\\\\\
@@ -140,7 +140,7 @@ ZW lässt das Blut eines Ziels kochen. Richtet immer wenn das Ziel an der Reihe 
 \begin{tabularx}{\textwidth}{X|X|X}
 Standardaktion & Reichweite: 30 & Dauer: 5 Runden
 \end{tabularx} \\ \hline
-ZW legt einen Schatten über das Ziel. Das Ziel hat eine schlechte Sicht (Bei einer Steigerung: ist fast blind, bei zwei Steigerungen ist blind). Das Ziel bekommt -2(-1xSteigerung) auf die RK. Ab einer Steigerung kann das Ziel keine Fernkampfangriffe mehr durchführen.
+ZW legt einen Schatten über das Ziel. Das Ziel hat eine schlechte Sicht (Bei einer Steigerung: ist fast blind, bei zwei Steigerungen ist blind). Das Ziel bekommt -2(-1$\times$Steigerung) auf die RK. Ab einer Steigerung kann das Ziel keine Fernkampfangriffe mehr durchführen.
 \\ \hline
 \end{tabular}
 \\\\\\
@@ -186,9 +186,9 @@ ZW kann Details in doppelter Entfernung erkennen. Distanzmali werden halbiert.
 \textbf{Befreunden} & Rang 2 & 3 Mana & SK: Willenskraft
 \end{tabularx} \\ \hline
 \begin{tabularx}{\textwidth}{X|X|X}
-Standardaktion & Reichweite: 5 & Dauer: 5\,min (+2xSteigerung)
+Standardaktion & Reichweite: 5 & Dauer: (5+2$\times$Steigerung)\,min
 \end{tabularx} \\ \hline
-Ein Lebewesen ist für 5\,min(+2xSteigerung) der beste Freund des ZW.
+Ein Lebewesen ist für (5+2$\times$Steigerung)\,min der beste Freund des ZW.
 \\ \hline
 \end{tabular}
 \\\\\\
@@ -224,7 +224,7 @@ Ein Ziel in 10\,m Entfernung wirft eine Ausdauerprobe gegen den PW des Zaubers. 
 \begin{tabularx}{\textwidth}{X|X|X}
 Bonusaktion & Reichweite: Berühren & Dauer: 2 Runden + 1 Runde/Lvl
 \end{tabularx} \\ \hline
-Versetzt ein Lebewesen in Berührenreichweite in Blutrausch, sodass dieses 4(+4xSteigerung) mehr Schaden verursacht und erhält. Dieser Effekt wird um den gleichen Wert erhöht sobald der vom Blutrausch betroffene einen Gegner tötet. Der Zauber dauert bis zu 2 Runden + 1 Runde pro Spielerlevel an, er kann aber auch früher vom Zauberwirker beendet werden.
+Versetzt ein Lebewesen in Berührenreichweite in Blutrausch, sodass dieses 4(+4$\times$Steigerung) mehr Schaden verursacht und erhält. Dieser Effekt wird um den gleichen Wert erhöht sobald der vom Blutrausch betroffene einen Gegner tötet. Der Zauber dauert bis zu 2 Runden + 1 Runde pro Spielerlevel an, er kann aber auch früher vom Zauberwirker beendet werden.
 \\ \hline
 \end{tabular}
 \\\\\\
@@ -236,7 +236,7 @@ Versetzt ein Lebewesen in Berührenreichweite in Blutrausch, sodass dieses 4(+4x
 \begin{tabularx}{\textwidth}{X|X|X}
 Volle Aktion & Reichweite: - & Dauer: 1 Tag
 \end{tabularx} \\ \hline
-ZW braucht etwas vom Opfer (z.B. Haar). Alle Proben des Opfers sind für einen Tag um 4(+4xSteigerung) erschwert und das Opfer erhält einen Malus von 3(+3xSteigerung) auf alle Angriffswürfe.
+ZW braucht etwas vom Opfer (z.B. Haar). Alle Proben des Opfers sind für einen Tag um 4(+4$\times$Steigerung) erschwert und das Opfer erhält einen Malus von 3(+3$\times$Steigerung) auf alle Angriffswürfe.
 \\ \hline
 \end{tabular}
 \\\\\\
@@ -246,9 +246,9 @@ ZW braucht etwas vom Opfer (z.B. Haar). Alle Proben des Opfers sind für einen T
 \textbf{Blutritual} & Rang 3 & 4 Mana & SK: 10
 \end{tabularx} \\ \hline
 \begin{tabularx}{\textwidth}{X|X|X}
-2 Volle Aktionen & Reichweite: selbst & Dauer: 3 Tage
+Volle Aktion & Reichweite: selbst & Dauer: 3 Tage
 \end{tabularx} \\ \hline
-ZW kann mit Blut eines frisch getöteten Lebewesens ein Ritual durchführen (mind 1\,l Blut). ZW erhält +2(+2xSteigerung) auf ein beliebiges Attribut für 3 Tage. Bei erneuter Durchführung des Rituals geht der alte Bonus verloren.
+ZW kann mit Blut eines frisch getöteten Lebewesens ein Ritual durchführen (mind 1\,l Blut). ZW erhält +2(+2$\times$Steigerung) auf ein beliebiges Attribut für 3 Tage. Bei erneuter Durchführung des Rituals geht der alte Bonus verloren.
 \\ \hline
 \end{tabular}
 
@@ -276,7 +276,7 @@ ZW beschwört Lichtkugel für 10 min, die der ZW frei im Radius von 10\,m bewege
 \begin{tabularx}{\textwidth}{X|X|X}
 Bonusaktion & Reichweite: 10/20/30 & Dauer: Sofort
 \end{tabularx} \\ \hline
-Alle Lebewesen im Kegel (Winkel $120^\circ$) vor dem ZW werden geblendet, sofern sie in Richtung des ZW schauen, und erhalten -1(-1xSteigerung) auf RK und Angriffswürfe für 2 Kampfrunden. Die Standardreichweite von 10\,m kostet den Zauberwirker 2 Mana. Jede höhere Reichweitenklasse erhöht die Kosten um 1 Mana.
+Alle Lebewesen im Kegel (Winkel $120^\circ$) vor dem ZW werden geblendet, sofern sie in Richtung des ZW schauen, und erhalten -1(-1$\times$Steigerung) auf RK und Angriffswürfe für 2 Kampfrunden. Die Standardreichweite von 10\,m kostet den Zauberwirker 2 Mana. Jede höhere Reichweitenklasse erhöht die Kosten um 1 Mana.
 \\ \hline
 \end{tabular}
 \\\\\\
@@ -286,9 +286,9 @@ Alle Lebewesen im Kegel (Winkel $120^\circ$) vor dem ZW werden geblendet, sofern
 \textbf{Schildzauber} & Rang 1 & 3 Mana & SK: 6
 \end{tabularx} \\ \hline
 \begin{tabularx}{\textwidth}{X|X|X}
-Standardaktion & Reichweite: Berühren & Dauer: 1 Runde/Lvl
+Standardaktion & Reichweite: Berühren & Dauer: (1+Lvl) Runden
 \end{tabularx} \\ \hline
-Wirkbar auf ein Ziel in Berührenreichweite. Ziel erhält +1(+1xSteigerung) auf RK für 1 Runde pro Spielerlevel.
+Wirkbar auf ein Ziel in Berührenreichweite. Ziel erhält +1(+1$\times$Steigerung) auf RK für (1+Level) Runden.
 \\ \hline
 \end{tabular}
 \\\\\\
@@ -300,7 +300,7 @@ Wirkbar auf ein Ziel in Berührenreichweite. Ziel erhält +1(+1xSteigerung) auf 
 \begin{tabularx}{\textwidth}{X|X|X}
 Standardaktion & Reichweite: 30 & Dauer: dauerhaft
 \end{tabularx} \\ \hline
-ZW beschwört Ranke aus dem Boden in max 30 m Entfernung. Ranke greift alle Feinde in 2\,m Radius, direkt nach dem Zug des Zaubernden, an (zählt als Nahkampfangriff). Als Angriffswurf wird erneut eine Zaubernprobe geworfen. Die Ranke verursacht 2W4(+1xSteigerung) Schaden. Die Ranke hat 10 Lp und keine Abwehr.
+ZW beschwört Ranke aus dem Boden in max 30 m Entfernung. Ranke greift alle Feinde in 2\,m Radius, direkt nach dem Zug des Zaubernden, an (zählt als Nahkampfangriff). Als Angriffswurf wird erneut eine Zaubernprobe geworfen. Die Ranke verursacht 2W4(+1W4 pro Steigerung) Schaden. Die Ranke hat 10 Lp und keine Abwehr.
 \\ \hline
 \end{tabular}
 \\\\\\
@@ -310,7 +310,7 @@ ZW beschwört Ranke aus dem Boden in max 30 m Entfernung. Ranke greift alle Fein
 \textbf{Wand} & Rang 1 & 1 Mana/m & SK: 9
 \end{tabularx} \\ \hline
 \begin{tabularx}{\textwidth}{X|X|X}
-Standardaktion & Reichweite: 5 & Dauer: 20 min + 2 min/Lvl
+Standardaktion & Reichweite: 5 & Dauer: (20 + 2$\times$Lvl)\,min
 \end{tabularx} \\ \hline
 ZW erzeugt eine durchsichtige solide Wand. Die Wand ist bis zu 2\,m hoch und 1\,m breit für jeden Manapunkt der bezahlt wurde. ZW kann jederzeit den Zauber aufheben und die Wand auflösen.
 \\ \hline
@@ -322,7 +322,7 @@ ZW erzeugt eine durchsichtige solide Wand. Die Wand ist bis zu 2\,m hoch und 1\,
 \textbf{Sumpf} & Rang 1 & 3 Mana & SK: 8
 \end{tabularx} \\ \hline
 \begin{tabularx}{\textwidth}{X|X|X}
-Standard Aktion & Reichweite: 30 & Dauer: 10\,min + 2\,min/Lvl
+Standard Aktion & Reichweite: 30 & Dauer: (10 + 2$\times$Lvl)\,min
 \end{tabularx} \\ \hline
 ZW erschafft einen Sumpf in bis zu 30\,m Entfernung mit einem Radius von bis zu 5\,m. Alle Individuen in dem Sumpf sind verlangsamt. Bei 2 Steigerungen sind alle Individuen stattdessen stark verlangsamt.
 \\ \hline
@@ -334,7 +334,7 @@ ZW erschafft einen Sumpf in bis zu 30\,m Entfernung mit einem Radius von bis zu 
 \textbf{Nebel} & Rang 2 & 2-6 Mana & SK: 8
 \end{tabularx} \\ \hline
 \begin{tabularx}{\textwidth}{X|X|X}
-Standard Aktion & Reichweite: 10/Mana & Dauer: 10\,min + 2\,min/Lvl
+Standard Aktion & Reichweite: 10/Mana & Dauer: (10 + 2$\times$Lvl)\,min
 \end{tabularx} \\ \hline
 ZW erschafft einen Nebel in 10\,m Umkreis pro bezahltem Mana. Der Nebel lässt eine Blickweite von 5\,m (-1\,m x Steigerung) zu
 \\ \hline
@@ -348,7 +348,7 @@ ZW erschafft einen Nebel in 10\,m Umkreis pro bezahltem Mana. Der Nebel lässt e
 \begin{tabularx}{\textwidth}{X|X|X}
 Volle Aktion & Reichweite: 10\,km & Dauer: 30 min
 \end{tabularx} \\ \hline
-ZW beschwört einen Wolfsgeist für 30 min, der dem ZW gehorcht und gedanklich Befehle entgegen nimmt. Der Geist kann Nahkampfangriffe ausführen. Für einen Angriff wirft der ZW eine Zaubernprobe. Der Geist verursacht 2W8 Schaden. Der Geist besitzt 20 (+20xSteigerung) Hp und RK 0. Bewegungsweite 6\,m.
+ZW beschwört einen Wolfsgeist für 30 min, der dem ZW gehorcht und gedanklich Befehle entgegen nimmt. Der Geist kann Nahkampfangriffe ausführen. Für einen Angriff wirft der ZW eine Zaubernprobe. Der Geist verursacht 2W6(+1W6 pro Steigerung) Schaden. Der Geist besitzt 20 (+20$\times$Steigerung) Hp und AU 8. Bewegungsweite 6\,m.
 \\ \hline
 \end{tabular}
 \\\\\\
@@ -370,9 +370,9 @@ ZW lässt bis zu 2 Wurzeln aus dem Boden schießen um Objekte/Körperteile in Bo
 \textbf{Schutzfeld} & Rang 2 & 2 Mana & SK: 8
 \end{tabularx} \\ \hline
 \begin{tabularx}{\textwidth}{X|X|X}
-Standardaktion & Reichweite: 2 & Dauer: 1 Runde/Lvl
+Standardaktion & Reichweite: 2 & Dauer: (1+Lvl) Runden
 \end{tabularx} \\ \hline
-ZW erzeugt eine Schützende Sphäre mit 2\,m Radius, die jedes Geschoss, welches die Sphäre durchdringt um 2(+2xSteigerung) Schaden abschwächt.
+ZW erzeugt eine Schützende Sphäre mit 2\,m Radius, die jedes Geschoss, welches die Sphäre durchdringt um 4(+4$\times$Steigerung) Schaden abschwächt.
 \\ \hline
 \end{tabular}
 \\\\\\
@@ -384,7 +384,7 @@ ZW erzeugt eine Schützende Sphäre mit 2\,m Radius, die jedes Geschoss, welches
 \begin{tabularx}{\textwidth}{X|X|X}
 Volle Aktion & Reichweite: selbst & Dauer: 30 min
 \end{tabularx} \\ \hline
-ZW erzeugt ein Spiegelbild von sich selbst, so dass nicht zu erkennen ist, wer der Echte ist. Das Spiegelbild kann sich bewegen, ist aber stumm und kann keine Zauber ausführen oder Schaden verursachen. Das Spiegelbild kann sich nicht weiter als 20(+10xSteigerung)\,m vom ZW entfernen.
+ZW erzeugt ein Spiegelbild von sich selbst, so dass nicht zu erkennen ist, wer der Echte ist. Das Spiegelbild kann sich bewegen, ist aber stumm und kann keine Zauber ausführen oder Schaden verursachen. Das Spiegelbild kann sich nicht weiter als 20(+10$\times$Steigerung)\,m vom ZW entfernen.
 \\ \hline
 \end{tabular}
 \\\\\\
@@ -394,7 +394,7 @@ ZW erzeugt ein Spiegelbild von sich selbst, so dass nicht zu erkennen ist, wer d
 \textbf{Verkleidung} & Rang 2 & 3-5 Mana & SK: 9
 \end{tabularx} \\ \hline
 \begin{tabularx}{\textwidth}{X|X|X}
-Standardaktion & Reichweite: selbst & Dauer: 30 min + 5 min/Lvl
+Standardaktion & Reichweite: selbst & Dauer: (30 + 5$\times$Lvl)\,min
 \end{tabularx} \\ \hline
 ZW nimmt die Gestalt einer anderen Person an. Die Basiskosten sind 3 Mana. Ist die zu imitierende Person größer, steigen die Kosten (SL). Die zu imitierende Person kann nicht mehr als doppelt so groß sein wie der ZW. Die Verkleidung kann mit einer Bemerkenprobe durchschaut werden, dazu muss die Bemerkenprobe die Zauberprobe um 2 übertreffen, wenn die imitierte Person gut bekannt ist sonst muss sie um 4 übertroffen werden.
 \\ \hline
@@ -418,11 +418,11 @@ ZW beschwört ein Paar Hände in maximal 15\,m Entfernung. Die Hände können vo
 \textbf{Tote Erwecken} & Rang 2 & 5 Mana & SK: 9
 \end{tabularx} \\ \hline
 \begin{tabularx}{\textwidth}{X|X|X}
-1 min & Reichweite: 5 & Dauer: 24 Stunden
+Volle Aktion & Reichweite: 5 & Dauer: 24 Stunden
 \end{tabularx} \\ \hline
 Um den Zauber durchführen zu können sind entweder Knochen oder eine Leiche erforderlich. Werden Knochen verwendet entsteht ein Skelett und mit einer Leiche entsteht ein Zombie. Der Untote kann einfache Befehle telepathisch in 60\,m Entfernung als Bonusaktion empfangen. Der Untote ist nicht in der Lage mit anderen Lebewesen zu kommunizieren.
 
-Der Zombie hat immer die gleiche Initiative wie der Zaubernde und ist immer direkt nach ihm im Kampf an der Reihe. Er hat 30 Lp, PA 0 und AU 7(+1xSteigerung). Er kann Nahkampfangriffe durchführen mit 2W8(+1xSteigerung) die 1W6 Schaden verursachen. Laufenwert: 5.
+Der Zombie hat immer die gleiche Initiative wie der Zaubernde und ist immer direkt nach ihm im Kampf an der Reihe. Er hat 30 Lp, PA 0 und AU 7(+1$\times$Steigerung). Er kann Nahkampfangriffe durchführen mit 2W8(+3$\times$Steigerung) die 1W6(+1W10 pro Steigerung) Schaden verursachen. Laufenwert: 5(+1$\times$Steigerung).
 
 Man kann nie mehr als einen Untoten zum Leben erwecken.
 \\ \hline
@@ -470,16 +470,16 @@ Der ZW kann mit einem Ritual einen Elementargeist (Wasser, Eis, Feuer, Humus, Er
 \begin{tcolorbox}[title={Feuerelementar},colbacktitle=red, coltitle=black]    
    \textbf{Lp:} 25
    \textbf{Mana:} 40
-   \textbf{Init:} 1W8+2\\
+   \textbf{Init:} 1W10+2\\
    \textbf{Laufen:} 9
    \textbf{AU:} 13
    \textbf{RK:} 13\\
    
-   \textbf{Feuerfaustangriff:} 2W8 Angriff, 2W10 Schaden, 1\,m Reichweite\\
+   \textbf{Feuerfaustangriff:} Angriff: 2W8+2, Schaden: 2W10, Reichweite: 1\,m\\
    
-   \textbf{Feuerball:} 1W8+1W10 ZP\\
+   \textbf{Feuerball:} ZP: 1W8+1W10\\
    
-   \textbf{Flammenmeer:} 1W8+1W10 ZP\\
+   \textbf{Flammenmeer:} ZP: 1W8+1W10 ZP\\
    
    Nimmt halben Schaden durch physische Angriffe und doppelten von Angriffen mit Wasser.
 \end{tcolorbox}
@@ -492,7 +492,7 @@ Der ZW kann mit einem Ritual einen Elementargeist (Wasser, Eis, Feuer, Humus, Er
    \textbf{AU:} 12
    \textbf{RK:} 12\\
    
-   \textbf{Wasserarm:} 1W8+1W10 Angriff, 2W10+3 Schaden, 5\,m Reichweite\\
+   \textbf{Wasserarm:}\\ Angriff: 1W8+1W10+2, \\Schaden: 2W10+3, Reichweite: 5\,m\\
    
    Nimmt halben Schaden durch physische Angriffe und doppelten von Angriffen mit Feuer.
 \end{tcolorbox}
@@ -505,9 +505,9 @@ Der ZW kann mit einem Ritual einen Elementargeist (Wasser, Eis, Feuer, Humus, Er
    \textbf{AU:} 12
    \textbf{RK:} 15\\
    
-   \textbf{Eisschlag:} 2W6+1 Angriff, 2W8+3 Schaden, 1\,m Reichweite\\
+   \textbf{Eisschlag:} Angriff: 2W6+1, Schaden: 2W8+3, Reichweite: 1\,m\\
    
-   \textbf{Eisgeschoss:} 1W8+1W10 ZP\\
+   \textbf{Eisgeschoss:} ZP: 1W8+1W10\\
    
    \textbf{Doppeltes Geschoss:} Kann den Zauber Eisgeschoss als Schnelle Aktion wirken, wenn er vorher als Standardaktion gewirkt wurde.
 \end{tcolorbox}
@@ -520,11 +520,11 @@ Der ZW kann mit einem Ritual einen Elementargeist (Wasser, Eis, Feuer, Humus, Er
    \textbf{AU:} 13
    \textbf{RK:} 15\\
    
-   \textbf{Rankenschlag:} 2W8+2 Angriff, 2W8+2 Schaden, 3\,m Reichweite\\
+   \textbf{Rankenschlag:} Angriff: 2W8+2, Schaden: 2W8+2, Reichweite: 3\,m\\
    
-   \textbf{Wurzelfessel:} 1W8+1W10 ZP\\
+   \textbf{Wurzelfessel:} ZP: 1W8+1W10\\
    
-   \textbf{Rankenangriff:} 1W8+1W10+2 ZP\\
+   \textbf{Rankenangriff:} ZP: 1W8+1W10+2\\
    
    \textbf{Doppelte Ranke:} Immer wenn der Zauber Rankenangriff gewirkt wird entstehen 2 Ranken statt nur einer.
 \end{tcolorbox}
@@ -537,7 +537,7 @@ Der ZW kann mit einem Ritual einen Elementargeist (Wasser, Eis, Feuer, Humus, Er
    \textbf{AU:} 4
    \textbf{RK:} 18\\
    
-   \textbf{Steinschlag:} 2W8 Angriff, 4W12+2 Schaden, 1\,m Reichweite\\
+   \textbf{Steinschlag:} Angriff: 2W8, Schaden: 4W12+2, Reichweite: 1\,m\\
 \end{tcolorbox}
 
 \begin{tcolorbox}[title={Luftelementar},colbacktitle=white, coltitle=black]    
@@ -548,11 +548,11 @@ Der ZW kann mit einem Ritual einen Elementargeist (Wasser, Eis, Feuer, Humus, Er
    \textbf{AU:} 14
    \textbf{RK:} 14\\
    
-   \textbf{Wirbelsturm:} 1W8+1W10 ZP\\
+   \textbf{Wirbelsturm:} ZP: 1W8+1W10\\
    
-   \textbf{Kettenblitz:} 1W8+1W10+2 ZP\\
+   \textbf{Kettenblitz:} ZP: 1W8+1W10+2\\
    
-   \textbf{Starker Sturm:} Wenn Wirbelsturm gewirkt wird, werden alle numerischen Werte des Zaubers verdoppelt.
+   \textbf{Starker Sturm:} Wenn Wirbelsturm gewirkt wird, werden alle numerischen Werte des Zaubers verdoppelt.\\
    
    Nimmt halben Schaden durch physische Angriffe und doppelten von magischen Angriffen.
 \end{tcolorbox}
@@ -583,7 +583,7 @@ ZW schießt eine Kugel magischer Energie auf ein Ziel. Verursacht 1W6 (plus 1W4 
 \begin{tabularx}{\textwidth}{X|X|X}
 Bonusaktion & Reichweite: Selbst & Dauer: 5 Runden
 \end{tabularx} \\ \hline
-ZW setzt seine Hand/Hände in Brand. Faustangriffe erhalten +1(+1xSteigerung) auf den Angriffswurf und verursachen 1W4 Extraschaden. Faustangriffe mit einer brennenden Hand werden gegen AU des Ziels geworfen.
+ZW setzt seine Hand/Hände in Brand. Faustangriffe erhalten +1(+1$\times$Steigerung) auf den Angriffswurf und verursachen 1W4 Extraschaden. Faustangriffe mit einer brennenden Hand werden gegen AU des Ziels geworfen.
 \\ \hline
 \end{tabular}
 \\\\\\
@@ -632,7 +632,7 @@ ZW beschwört ein magisches Schwert in max 30\,m Entfernung, dass sich relativ z
 \begin{tabularx}{\textwidth}{X|X|X}
 Standardaktion & Reichweite: 30 & Dauer: sofort
 \end{tabularx} \\ \hline
-ZW wirkt einen Blitz auf ein Ziel in 30\,m Entfernung der Ges+1W6 Schaden verursacht. Der Blitz springt auf das nächststehende Ziel über das max 7\,m entfernt ist. Der Blitz springt 2(+1xSteigerung) mal über. 
+ZW wirkt einen Blitz auf ein Ziel in 30\,m Entfernung der Ges+1W6 Schaden verursacht. Der Blitz springt auf das nächststehende Ziel über das max 7\,m entfernt ist. Der Blitz springt 2(+1$\times$Steigerung) mal über. 
 \\ \hline
 \end{tabular}
 \\\\\\
@@ -644,7 +644,7 @@ ZW wirkt einen Blitz auf ein Ziel in 30\,m Entfernung der Ges+1W6 Schaden verurs
 \begin{tabularx}{\textwidth}{X|X|X}
 Standardaktion & Reichweite: 20/40/60 & Dauer: sofort
 \end{tabularx} \\ \hline
-ZW lässt Eisgeschosse (beliebiger Form, handgroß) auf ein Ziel fliegen. Verursacht 2Ges(+2xSteigerung) Schaden.
+ZW lässt Eisgeschosse (beliebiger Form, handgroß) auf ein Ziel fliegen. Verursacht 2Ges(+2$\times$Steigerung) Schaden.
 \\ \hline
 \end{tabular}
 \\\\\\
@@ -700,7 +700,7 @@ Die Schule der Veränderung beinhaltet Zauber, die die Umwelt beeinflussen und v
 \begin{tabularx}{\textwidth}{X|X|X}
 Volle Aktion & Reichweite: 50 & Dauer: beliebig
 \end{tabularx} \\ \hline
-ZW lässt beliebig viele Pflanzen in bis zu 15 m Entfernung schnell anwachsen. Pflanzen wachsen mit bis zu 2\,m/Runde(+0,5xSteigerung).
+ZW lässt beliebig viele Pflanzen in bis zu 15 m Entfernung schnell anwachsen. Pflanzen wachsen mit bis zu 2\,m/Runde(+0,5$\times$Steigerung).
 \\ \hline
 \end{tabular}
 \\\\\\
@@ -712,7 +712,7 @@ ZW lässt beliebig viele Pflanzen in bis zu 15 m Entfernung schnell anwachsen. P
 \begin{tabularx}{\textwidth}{X|X|X}
 Bonusaktion & Reichweite: 30 & Dauer: sofort
 \end{tabularx} \\ \hline
-ZW kann eine existierende Pfütze um 1\,m (+1\,m\,x\,Steigerung) vertiefen. Mit bloßem Auge ist der Unterschied nicht wahrnehmbar.
+ZW kann eine existierende Pfütze um 1\,m (+1\,m$\times$Steigerung) vertiefen. Mit bloßem Auge ist der Unterschied nicht wahrnehmbar.
 \\ \hline
 \end{tabular}
 \\\\\\
@@ -812,7 +812,7 @@ ZW kann einen Eisgegenstand aus Luftfeuchtigkeit(schwierig) oder Wasser(einfache
 \begin{tabularx}{\textwidth}{X|X|X}
 Volle Aktion & Reichweite: 100 & Dauer: 2 h
 \end{tabularx} \\ \hline
-ZW lässt die Temperatur um bis zu $10^\circ$C(+$40^\circ$CxSteigerung) in 100\,m Umkreis abfallen oder ansteigen.
+ZW lässt die Temperatur um bis zu $20^\circ$C(+$40^\circ$C$\times$Steigerung) in 100\,m Umkreis abfallen oder ansteigen.
 \\ \hline
 \end{tabular}
 \\\\\\
@@ -846,7 +846,7 @@ Wenn der ZW auf Erdboden steht, kann er mit diesem verschmelzen und sich mit dem
 \textbf{Regeneration} & Rang 2 & 5 Mana & SK: 10
 \end{tabularx} \\ \hline
 \begin{tabularx}{\textwidth}{X|X|X}
-5 Volle Aktionen & Reichweite: Berührung & Dauer: 1 Erholungsphase
+Volle Aktionen & Reichweite: Berührung & Dauer: 1 Erholungsphase
 \end{tabularx} \\ \hline
 Der Zauberwirker kann die Regeneration des Ziels beschleunigen. In der nächsten Regenerationsmöglichkeit des Ziels ist die Regeneration verdoppelt.
 \\ \hline
@@ -921,18 +921,19 @@ Mit der Probe Zauber überladen kann ein gewirkter Zauber verändert werden. Daz
 
 \subsection{Erlernen von Magie durch Fertigkeitspunkte}
 
-Zwischen den Sessions können Fp ausgegeben werden um neue Zauber zu erlernen. Die nötigen Fp entsprechen dem Level des Zaubers. Außerdem ist ein Mindestfertigkeitswürfel in der jeweiligen Zauberprobe (z.B. Verzauberungszauberprobe für Zauber aus der Verzauberungsschule). Level 1 Zauber können von jedem erlernt werden, während für Zauber vom Level 2 ein 1W6 und Level 2 nötig ist. Für Level 3 Zauber ist 1W10 und Level 5 die Voraussetzung.
+Zwischen den Sessions können Fp ausgegeben werden um neue Zauber zu erlernen. Außerdem ist ein Mindestfertigkeitswürfel in der jeweiligen Zauberprobe (z.B. Verzauberungszauberprobe für Zauber aus der Verzauberungsschule). Die jeweiligen Kosten und Voraussetzungen sind in Tabelle \ref{tab:ZauberLernen} zu sehen. Desweiteren werden Zauber erlernt wenn eine Zauberprobe verbessert wird. Dabei hängt das Level des erlernten Zaubers von dem neuen Probenwürfel ab. Bei einem W6 erlernt der Charakter einen Level 1 Zauber bei W8 und W10 erlernt der Charakter einen Level 2 Zauber und wird der Probenwürfel auf einen W12 erhöht erlernt er einen Level 3 Zauber.
 
 {\rowcolors{2}{black!10!white!40}{black!50!white!50}
 \begin{table}[h!]
 \centering
 \caption{Zaubervoraussetzungen}
-\begin{tabular}{|cl|}
+\label{tab:ZauberLernen}
+\begin{tabular}{|ccl|}
 \hline
-\textbf{Zauberlevel} & \textbf{Vorraussetzung}\\ \hline
-1 & keine\\
-2 & 1W6 in der entsprechenden Zauberprobe, Level 3\\
-3 & 1W10 in der entsprechenden Zauberprobe, Level 5\\ \hline
+\textbf{Zauberlevel} & \textbf{Kosten} & \textbf{Vorraussetzung}\\ \hline
+1 & 2 Zauber für 1 Fp & keine\\
+2 & 1 Zauber für 1 Fp & 1W6 in der entsprechenden Zauberprobe, Level 3\\
+3 & 1 Zauber für 2 Fp & 1W10 in der entsprechenden Zauberprobe, Level 5\\ \hline
 \end{tabular}
 \end{table}
 }
