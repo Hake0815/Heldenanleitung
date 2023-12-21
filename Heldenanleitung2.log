@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.6.29)  17 NOV 2023 16:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.6.29)  21 DEC 2023 17:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1184,6 +1184,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--38
 Overfull \hbox (37.59996pt too wide) in paragraph at lines 22--41
 [][] 
  []
+
+
+Package caption Warning: \label without proper reference on input line 21.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:Aktionen' on page 19 undefined on input line 43.
 
 [19
 
@@ -2723,6 +2730,9 @@ Package rerunfilecheck Info: File `Heldenanleitung2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
@@ -2745,7 +2755,7 @@ sr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/pu
 blic/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/sha
 re/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmsy8.pfb>
-Output written on Heldenanleitung2.pdf (52 pages, 311875 bytes).
+Output written on Heldenanleitung2.pdf (52 pages, 312177 bytes).
 PDF statistics:
  790 PDF objects out of 1000 (max. 8388607)
  718 compressed objects within 8 object streams
