@@ -48,16 +48,16 @@ mittelSchwert6 = np.sum(w6+2)/N
 mittelSchwert8 = np.sum(w8+2)/N
 mittelSchwert10 = np.sum(w10+2)/N
 mittelSchwert12 = np.sum(w12+2)/N
-print('Axt mit W6 = {0:.2f} +/- {1:.2f}'.format(mittelAxt6, np.sqrt(1/(N-1)*np.sum((w6+w42-mittelAxt6)**2))))
-print('Axt mit W8 = {0:.2f} +/- {1:.2f}'.format(mittelAxt8, np.sqrt(1/(N-1)*np.sum((w6+w42-mittelAxt8)**2))))
-print('Axt mit W10 = {0:.2f} +/- {1:.2f}'.format(mittelAxt10, np.sqrt(1/(N-1)*np.sum((w6+w42-mittelAxt10)**2))))
-print('Axt mit W12 = {0:.2f} +/- {1:.2f}'.format(mittelAxt12, np.sqrt(1/(N-1)*np.sum((w6+w42-mittelAxt12)**2))))
-print('Schwert mit W6 = {0:.2f} +/- {1:.2f}'.format(mittelSchwert6, np.sqrt(1/(N-1)*np.sum((w6+2-mittelSchwert6)**2))))
-print('Schwert mit W8 = {0:.2f} +/- {1:.2f}'.format(mittelSchwert8, np.sqrt(1/(N-1)*np.sum((w6+2-mittelSchwert8)**2))))
-print('Schwert mit W10 = {0:.2f} +/- {1:.2f}'.format(mittelSchwert10, np.sqrt(1/(N-1)*np.sum((w6+2-mittelSchwert10)**2))))
-print('Schwert mit W12 = {0:.2f} +/- {1:.2f}'.format(mittelSchwert12, np.sqrt(1/(N-1)*np.sum((w6+2-mittelSchwert12)**2))))
-print('Bidenhänder mit W10 = {0:.2f} +/- {1:.2f}'.format(mittelBiden10, abweichBiden10))
-print('')
+# print('Axt mit W6 = {0:.2f} +/- {1:.2f}'.format(mittelAxt6, np.sqrt(1/(N-1)*np.sum((w6+w42-mittelAxt6)**2))))
+# print('Axt mit W8 = {0:.2f} +/- {1:.2f}'.format(mittelAxt8, np.sqrt(1/(N-1)*np.sum((w6+w42-mittelAxt8)**2))))
+# print('Axt mit W10 = {0:.2f} +/- {1:.2f}'.format(mittelAxt10, np.sqrt(1/(N-1)*np.sum((w6+w42-mittelAxt10)**2))))
+# print('Axt mit W12 = {0:.2f} +/- {1:.2f}'.format(mittelAxt12, np.sqrt(1/(N-1)*np.sum((w6+w42-mittelAxt12)**2))))
+# print('Schwert mit W6 = {0:.2f} +/- {1:.2f}'.format(mittelSchwert6, np.sqrt(1/(N-1)*np.sum((w6+2-mittelSchwert6)**2))))
+# print('Schwert mit W8 = {0:.2f} +/- {1:.2f}'.format(mittelSchwert8, np.sqrt(1/(N-1)*np.sum((w6+2-mittelSchwert8)**2))))
+# print('Schwert mit W10 = {0:.2f} +/- {1:.2f}'.format(mittelSchwert10, np.sqrt(1/(N-1)*np.sum((w6+2-mittelSchwert10)**2))))
+# print('Schwert mit W12 = {0:.2f} +/- {1:.2f}'.format(mittelSchwert12, np.sqrt(1/(N-1)*np.sum((w6+2-mittelSchwert12)**2))))
+# print('Bidenhänder mit W10 = {0:.2f} +/- {1:.2f}'.format(mittelBiden10, abweichBiden10))
+print(np.sum(w10+w102)/N)
 
 # print(np.sum(Roll(8,N))/N)
 # print(np.sum(Roll(6,N)+Roll(6,N)+Roll(6,N))/N)
